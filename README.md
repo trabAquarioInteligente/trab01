@@ -5,10 +5,10 @@ Trabalho desenvolvido durante a disciplina de BD1
 
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
-Andreas Hermes
-Daniel Comério
-Nicolas Sampaio
-Rafael dos Anjos
+Andreas Hermes<br>
+Daniel Comério<br>
+Nicolas Sampaio<br>
+Rafael dos Anjos<br>
 
 primeiro_componente_do_grupo:andreashermes7@gmail.com<br>
 segundo_componente_do_grupo:danielhcomerio@gmail.com<br>
