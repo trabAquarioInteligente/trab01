@@ -1,12 +1,19 @@
-# TRABALHO 01:  Título do Trabalho
+# TRABALHO 01:  Aquario Inteligente
 Trabalho desenvolvido durante a disciplina de BD1
 
 # Sumário
 
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
-primeiro_componente_do_grupo:email_primeiro_componente@dominio.com<br>
-segundo_componente_do_grupo:email_segundo_componente@dominio.com<br>
+Andreas Hermes
+Daniel Comério
+Nicolas Sampaio
+Rafael dos Anjos
+
+primeiro_componente_do_grupo:andreashermes7@gmail.com<br>
+segundo_componente_do_grupo:danielhcomerio@gmail.com<br>
+terceiro_componente_do_grupo:nicolas.pereira.sampaio16@gmail.com<br>
+quarto_componente_do_grupo:raffael.annjos@gmail.com<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇAO<br>
 Este documento contém a especificação do projeto do banco de dados <nome do projeto> 
