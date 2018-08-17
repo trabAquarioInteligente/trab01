@@ -19,7 +19,8 @@ quarto_componente_do_grupo:raffael.annjos@gmail.com<br>
 Este documento contém a especificação do projeto do banco de dados <nome do projeto> 
 <br>e motivação da escolha realizada. <br>
 
-> A empresa "Devcom Projetos" visa colaborar com desenvolvimento de projetos para uma sociedade melhor. Sabendo-se dos desafios para gerenciar projetos dentro de uma empresa e visando unir as informações relativas a funcionários, departamentos e projetos em um mesmo local, ficamos motivados com o desenvolvimento deste sistema. O Sistema "Devcom" tem como objetivo gerenciar todas as informações ao desenvolvimento das atividades de projetos em diversas localidades do país. Para realizar suas operações adequadamente e empresa necessita que sistema que armazene informações relativas aos Projetos, Departamentos e Empregados, além de também armazenar dados sobre  Dependentes e Históricos de Salário dos empregados. O sistema deverá gerar um conjunto de relatórios que por sua vez atenderá os anseios da empresa em questão.
+>Visando a nescessidade da expansão dos negócios de piscicultura e pensando em levar mais desenvolvimento para essa área, o projeto aquário inteligente visa aumentar a produção e a qualidade dos peixes criados em tanques através do controle da qualidade da água.
+Esse controle será feito através de sensores de monitoramento de PH, temperatura e oxigênio, estabelecendo pre-determinadamente o tipo de peixe e as condições mais ideiais e favoráveis para seu completo desenvolvimento, esses sensores coletarão essas informações e passaram para o sistema "Aquário Inteligente" onde serão processadas e guardadas en um banco de dados.
  
 
 ### 3.MINI-MUNDO Novo<br>
