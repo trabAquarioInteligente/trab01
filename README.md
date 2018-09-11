@@ -37,13 +37,11 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
 
 > O sistema tem o propósito de indicar a melhor rota para o motorista evitando o engarrafamento e evitando a perda da qualidade da carne, o sistema deve controlar o tempo de saída e o tempo de chegada do caminhão ao destino para que ele não se atrase e chegue em um momento que os supermercados não estiverem descarregando. O sistema deve gerenciar o estoque da carne(armazenam apenas produtos frescos), o modelo de saída é o FIFO(First in First out), o sistema irá decidir qual peça vai em qual caminhão, tendo de ante mão o máximo de carga de cada camihão, se e somente se apenas um caminhão não bastar para a encomenda serão usados dois caminhões, cada caminhão é responsável por uma cidade onde o frigorífico atende dentro da grande vitória, as encomendas são cortes suínos, a empresa tem uma frota de 3 caminhões refrigerados, 2 fiorinos refrigerados e 2 fiorinos comuns. O sistema tem que ser implementado tendo em vista que em caso de um caminhão precisar de reparos o sistema deve gerenciar o restante para não haver sobrecarga.
 
-### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
-Neste ponto a codificação não e necessária, somente as ideias de telas devem ser criadas, o princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas ou descartadas <br>
+### 4.MOCKUP<br>
 
-Sugestão: https://balsamiq.com/products/mockups/<br>
+https://balsamiq.cloud/s8rtz1u/pgd5wyf/r2CEB
 
-![Alt text](https://github.com/discipbd1/trab01/blob/master/balsamiq.png?raw=true "Title")
-![Arquivo PDF do Protótipo Balsamiq feito para Empresa Devcom](https://github.com/discipbd1/trab01/blob/master/arquivos/EmpresaDevcom.pdf?raw=true "Empresa Devcom")
+
 #### 4.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
     a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
     b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
@@ -57,12 +55,8 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
  
  
 #### 4.2 TABELA DE DADOS DO SISTEMA:
-    a) Esta tabela deve conter todos os atributos do sistema e um mínimo de 10 linhas/registros de dados.
-    b) Esta tabela tem a intenção de simular um relatório com todos os dados que serão armazenados 
-    e deve ser criada antes do modelo conceitual
-    c) Após criada esta tabela não deve ser modificada, pois será comparada com os resultados finais na conclusão do trabalho
-    
-![Exemplo de Tabela de dados da Empresa Devcom](https://github.com/discipbd1/trab01/blob/master/arquivos/TabelaEmpresaDevCom_sample.xlsx?raw=true "Tabela - Empresa Devcom")
+
+    https://docs.google.com/spreadsheets/d/1BxwxuSJ4WmS0q5T_MO3xcqF6wNxkpfpqNcLKDiDSbrc/edit#gid=0
     
 >## Marco de Entrega 01 em: (30/08/2018)<br>
 
