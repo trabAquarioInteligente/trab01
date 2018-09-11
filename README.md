@@ -1,4 +1,4 @@
-# TRABALHO 01:  Aquario Inteligente
+# TRABALHO 01:  Transporte de perecíveis
 Trabalho desenvolvido durante a disciplina de BD1
 
 # Sumário
@@ -9,6 +9,12 @@ Andreas Hermes<br>
 Daniel Comério<br>
 Nicolas Sampaio<br>
 Rafael dos Anjos<br>
+### 1.1 CLIENTES<br>
+clientes<br>
+André Altivo<br>
+Gabriela Piffer<br>
+Lucca Pedrini<br>
+Marcelo Mendes<br>
 
 primeiro_componente_do_grupo:andreashermes7@gmail.com<br>
 segundo_componente_do_grupo:danielhcomerio@gmail.com<br>
@@ -19,9 +25,7 @@ quarto_componente_do_grupo:raffael.annjos@gmail.com<br>
 Este documento contém a especificação do projeto do banco de dados <nome do projeto> 
 <br>e motivação da escolha realizada. <br>
 
->Visando a nescessidade da expansão dos negócios de piscicultura e pensando em levar mais desenvolvimento para essa área, o projeto aquário inteligente visa aumentar a produção e a qualidade dos peixes criados em tanques através do controle da qualidade da água.
-Esse controle será feito através de sensores de monitoramento de PH, temperatura e oxigênio, estabelecendo pre-determinadamente o tipo de peixe e as condições mais ideiais e favoráveis para seu completo desenvolvimento, esses sensores coletarão essas informações e passaram para o sistema "Aquário Inteligente" onde serão processadas e guardadas en um banco de dados.
- 
+>Os problemas do nosso cliente abrangem o transporte e a qualidade das carnes, o software deverá controlar o estoque de carnes do frigorífico, controlar a qualidade da carne por meio do tempo de congelamento de cada peça a fim das mesmas não perderem o sabor, e deverá também calcular a melhor rota para os caminhões, evitando ao máximo engarrafamentos economizando assim gasolina.
 
 ### 3.MINI-MUNDO Novo<br>
 
@@ -31,7 +35,7 @@ Descrição textual das regras de negócio definidas como um  subconjunto do mun
 cujos elementos são propriedades que desejamos incluir, processar, armazenar, 
 gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
 
-> O sistema proposto para a "Devcom Projetos conterá as informacões aqui detalhadas. Dos Projetos serão armazenados o número, nome e cidade. Dos Departamentos serão armazenados o número e nome. O cliente destacou que cada projeto pode ter vários departamentos auxiliando no seu desenvolvimento, e cada departamento pode estar envolvido em vários projetos. Os dados relativos aos empregados que serão armazenados são: rg, nome, cpf, salário, data inicial do salario e supervisor de cada empregado. É importante destacar que cada empregado pode ser supervisionado por outro empregado, e obrigatoriamente deve estar alocado a um único departamento, mas pode gerenciar vários departamentos ou não gerenciar nenhum. Um empregado também pode participar de vários projetos, caso seja necessário, mas não precisa obrigatoriamente estar alocado em algum projeto. Com relação aos dependentes serão armazenadas as informações de nome do dependente, data de nascimento, sexo e grau de parentesco. Cada empregado pode ter vários dependentes, mas um dependente esta associado apenas a um único empregado. Com relação ao histórico de salário devemos armazenar as informações de valor do salário, data de início do salário no período e data final do salário no período. É importante lembrar que cada funcionario pode ter diversos eventos de histórico de salário associados a ele visto que este dado pode ser alterado várias vezes. 
+> O sistema tem o propósito de indicar a melhor rota para o motorista evitando o engarrafamento e evitando a perda da qualidade da carne, o sistema deve controlar o tempo de saída e o tempo de chegada do caminhão ao destino para que ele não se atrase e chegue em um momento que os supermercados não estiverem descarregando. O sistema deve gerenciar o estoque da carne(armazenam apenas produtos frescos), o modelo de saída é o FIFO(First in First out), o sistema irá decidir qual peça vai em qual caminhão, tendo de ante mão o máximo de carga de cada camihão, se e somente se apenas um caminhão não bastar para a encomenda serão usados dois caminhões, cada caminhão é responsável por uma cidade onde o frigorífico atende dentro da grande vitória, as encomendas são cortes suínos, a empresa tem uma frota de 3 caminhões refrigerados, 2 fiorinos refrigerados e 2 fiorinos comuns. O sistema tem que ser implementado tendo em vista que em caso de um caminhão precisar de reparos o sistema deve gerenciar o restante para não haver sobrecarga.
 
 ### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 Neste ponto a codificação não e necessária, somente as ideias de telas devem ser criadas, o princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas ou descartadas <br>
