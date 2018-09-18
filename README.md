@@ -70,9 +70,8 @@ https://balsamiq.cloud/s8rtz1u/pgd5wyf/r2CEB
         
     
 #### 5.1 Validação do Modelo Conceitual
-    [Grupo01]: [Nomes dos que participaram na avaliação]
-    [Grupo02]: [Nomes dos que participaram na avaliação]
-
+    [Smart Car]: [Harrison Sanches]
+    [Pulseira Saúde]: [Wallace de Paula]
 #### 5.2 DECISÕES DE PROJETO
     [atributo]: [descrição da decisão]
     
