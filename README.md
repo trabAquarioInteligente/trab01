@@ -3,6 +3,9 @@ Trabalho desenvolvido durante a disciplina de BD1
 
 # Sumário
 
+### DIÁRIO DE BORDO<br>
+https://docs.google.com/document/d/1J8j7VNJyWz_0cKxVUvNO_YxGLkDz3z7vywEsU2Lk_ZY<br>
+
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
 Andreas Hermes<br>
