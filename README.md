@@ -25,11 +25,13 @@ terceiro_componente_do_grupo:nicolas.pereira.sampaio16@gmail.com<br>
 quarto_componente_do_grupo:raffael.annjos@gmail.com<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇAO<br>
->Os problemas do nosso cliente abrangem o transporte e a qualidade das carnes, o software deverá controlar o estoque de carnes do frigorífico, controlar a qualidade da carne por meio do tempo de congelamento de cada peça a fim das mesmas não perderem o sabor, e deverá também calcular a melhor rota para os caminhões, evitando ao máximo engarrafamentos economizando assim gasolina.
+O frigorífico fricarnes é uma empresa que realiza entregas de carne suína dentro da região de grande vitória que devem ser realizadas dentro de um determinado tempo, as carnes devem estar em uma certa temperatura, caso essa temperatura esteja errada as carnes congelam o que resulta em uma perda da qualidade ou elas estragam resultando na perda da mercadoria.
 
 ### 3.MINI-MUNDO Novo<br>
 
-> O sistema tem o propósito de indicar a melhor rota para o motorista evitando o engarrafamento e evitando a perda da qualidade da carne, o sistema deve controlar o tempo de saída e o tempo de chegada do caminhão ao destino para que ele não se atrase e chegue em um momento que os supermercados não estiverem descarregando. O sistema deve gerenciar o estoque da carne(armazenam apenas produtos frescos), o modelo de saída é o FIFO(First in First out), o sistema irá decidir qual peça vai em qual caminhão, tendo de ante mão o máximo de carga de cada camihão, se e somente se apenas um caminhão não bastar para a encomenda serão usados dois caminhões, cada caminhão é responsável por uma cidade onde o frigorífico atende dentro da grande vitória, as encomendas são cortes suínos, a empresa tem uma frota de 3 caminhões refrigerados, 2 fiorinos refrigerados e 2 fiorinos comuns. O sistema tem que ser implementado tendo em vista que em caso de um caminhão precisar de reparos o sistema deve gerenciar o restante para não haver sobrecarga.
+O sistema a ser desenvolvido tem como objetivo solucionar os problemas do cliente que são: o estoque e as entregas.
+Na parte do estoque, o sistema deve controlar os produtos que entrarem no estoque do dia tendo em vista que são armazenados apenas produtos frescos e o modelo de saída desses produtos deve ser FIFO(First-In First-Out), registrar os pedidos dos clientes(supermercados), relacionar o pedido com um veículo, caso um pedido não caiba em um caminhão poderão ser usados até 2 caminhões.
+Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar engarrafamentos e melhorar o percurso para o motorista, cada caminhão tem um motorista que fica responsável por uma das cidades onde o frigorífico atende, o sistema deve gerenciar a frota do frigorífico de acordo que se ajuste os pedidos de forma paliativa caso algum veículo esteja precisando de reparos.
 
 ### 4.MOCKUP<br>
 
