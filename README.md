@@ -7,13 +7,11 @@ Trabalho desenvolvido durante a disciplina de BD1
 [Diário de Bordo](https://docs.google.com/document/d/1J8j7VNJyWz_0cKxVUvNO_YxGLkDz3z7vywEsU2Lk_ZY)<br>
 
 ### 1. COMPONENTES<br>
-Integrantes do grupo<br>
 Andreas Hermes<br>
 Daniel Comério<br>
 Nicolas Sampaio<br>
 Rafael dos Anjos<br>
 ### 1.1 CLIENTES<br>
-clientes<br>
 André Altivo<br>
 Gabriela Piffer<br>
 Lucca Pedrini<br>
