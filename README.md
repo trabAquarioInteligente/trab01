@@ -51,8 +51,8 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
  
 #### 4.2 TABELA DE DADOS DO SISTEMA:
 
-    [Tabela de Dados](https://github.com/trabAquarioInteligente/trab01/blob/master/Planilha/TransportePerecivel.xlsx)
-    
+[Tabela de Dados](https://github.com/trabAquarioInteligente/trab01/blob/master/Planilha/TransportePerecivel.xlsx)<br>
+
 >## Marco de Entrega 01 em: (30/08/2018)<br>
 
 ### 5.MODELO CONCEITUAL<br>
