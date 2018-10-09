@@ -33,7 +33,7 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
 
 ### 4.MOCKUP<br>
 
-[Mockup](https://github.com/trabAquarioInteligente/trab01/tree/master/Mockup)
+[Mockup](https://github.com/trabAquarioInteligente/trab01/blob/master/Mockup/TransportePereciveis.pdf)
 
 
 #### 4.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
@@ -51,7 +51,7 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
  
 #### 4.2 TABELA DE DADOS DO SISTEMA:
 
-    https://docs.google.com/spreadsheets/d/1BxwxuSJ4WmS0q5T_MO3xcqF6wNxkpfpqNcLKDiDSbrc/edit#gid=0
+    [Tabela de Dados](https://github.com/trabAquarioInteligente/trab01/blob/master/Planilha/TransportePerecivel.xlsx)
     
 >## Marco de Entrega 01 em: (30/08/2018)<br>
 
