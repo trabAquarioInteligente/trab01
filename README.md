@@ -63,6 +63,7 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
         
 
 ![Alt text](https://github.com/trabAquarioInteligente/trab01/blob/master/images/brModeloenvio.PNG?raw=true "Modelo Conceitual")
+[Modelo Conceitual - Formato BrModelo](https://github.com/trabAquarioInteligente/trab01/blob/master/images/brModeloenvio.PNG)<br>
     
     B) NOTACAO UML (Caso esteja fazendo a disciplina de analise)
     C) QUALIDADE 
