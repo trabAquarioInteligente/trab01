@@ -91,6 +91,75 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
     EXEMPLO:
     CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
     CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
+    
+    Tabela Cidades : tabela que armazena os nomes das cidades.
+    Codigo: Este campo é uma chave primária, ele é utilizado para evitar redundância no banco. de dados, levando em conta que as cidades     do projeto se repetem. 
+    Cidade: O nome da cidade cadastrada. 
+
+    Tabela Endereço : nela todos os endereços são armazenados.
+    Codigo: valor inteiro e chave primária (funcionários, empresa e pedidos são as tabelas que se relacionam com esse campo). 
+    Numero: valor inteiro (Ex.: número da casa).
+    Rua: String onde o nome da rua é armazenado. 
+    Bairro: String onde o bairro é armazenado. 
+    Cep: String onde o cep é armazenado.
+
+    Tabela Funcionario : Armazena informações sobre os funcionários da empresa. 
+    Codigo: Chave primária inteiro, armazena o cpf. 
+    Nome: Nome do Funcionário. 
+    codEnd: Forma de relacionar a tabela Endereço com funcionário. 
+    Funcao: O que o funcionário faz na empresa. 
+
+    Tabela Veículo : Informações sobre os Veículos são armazenadas aqui. 
+    codigo: Chave Primária. 
+    Refrigerado: boolean (Armazena a informação True quando o Veículo é refrigerado). pesoMaximo: Número real que armazena o peso           máximo.
+    modelo: String que armazena o modelo do veículo. 
+    placa: String que armazena a placa do veículo. 
+    codMot: Forma de relacionar a tabela motorista com a tabela Veículo. 
+
+    Tabela Motorista : Informações sobre os Motoristas. 
+    codigo: Chave Primária. 
+    codFun: Relaciona a tabela Motorista com a funcionário. 
+    codVeiculo: Relaciona a tabela Veículo com a tabela Motorista. 
+    codCidadeEntrega: Relaciona a tabela Motorista com a tabela Cidade. 
+
+    Tabela Estoque : Não seria bem uma tabela, aqui armazena informações sobre o número total de bandas no estoque. 
+    quantidadeT: Variavel que ira representar a quantidade total em estoque. 
+
+    Tabela Produto : Informações sobre os produtos em estoque. 
+    codigo: Chave Primária. 
+    dataAbate: Dia que o porco foi sacrificado. 
+    quantidade: Número de Bandas de porco no estoque. 
+
+    Tabela Empresa : Informações sobre os clientes. 
+    codigo: chave Primária. 
+    nome: Nome da Empresa. 
+    codEnd: Relaciona a tabela endereço com a tabela Empresa, assim que é armazenado o endereço da empresa.
+
+    Tabela HorarioEntrega : Armaze os horários de entrega das empresas. 
+    codigo: chave Primária. 
+    codEmp: forma de armazenar informações da empresa nessa tabela. 
+    horarioI: Horário que a empresa começa a receber entregas. 
+    horarioF: Horário que a empresa termina de receber entregas. 
+    Obs.: essa tabela está separada para normalizar, levando em consideração que empresas podem ter horários diferentes para receber o       pedido.
+
+    Tabela AcessoSistema : Define o que cada funcionário faz no sistema. 
+    codigo: Chave Primária. 
+    codFun: relaciona a tabela AcessoSistema com a tabela funcionario. 
+    senha: senha de acesso ao sistema. 
+    alterarEstoque: True caso esse funcionário irá alterar o estoque. 
+    agendarEntrega: True caso esse funcionário irá agendar as entregas. utilizarSistemadeEntrega: True caso esse funcionário irá             utilizar o navegador para procurar a melhor rota. 
+    cancelarEntrega: True caso esse funcionário cancelara a entre previamente agendada.
+
+    Tabela pedido 
+    codigo: Chave Primária. 
+    dataAgen: Dia que foi feita a encomenda. 
+    dataEnt: Dia que a entrega será efetuada na empresa. 
+    quantidade: Número de Bandas de porco encomendadas. 
+    codEmp: Forma de relacionar a tabela pedido com a tabela empresa. 
+    codMot: Forma de relacionar a tabela pedido com a tabela motorista. (aqui define qual motorista irá entregar). 
+    codEnd: Forma de relacionar a tabela pedido com a tabela endereço. (Aqui sera armazenado o endereço da entrega). 
+    precoV: Preço de venda do produto.
+
 
 
 ### 6	MODELO LÓGICO<br>
