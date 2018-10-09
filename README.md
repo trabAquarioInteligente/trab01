@@ -4,7 +4,7 @@ Trabalho desenvolvido durante a disciplina de BD1
 # Sumário
 
 ### DIÁRIO DE BORDO<br>
-https://docs.google.com/document/d/1J8j7VNJyWz_0cKxVUvNO_YxGLkDz3z7vywEsU2Lk_ZY<br>
+[Diário de Bordo](https://docs.google.com/document/d/1J8j7VNJyWz_0cKxVUvNO_YxGLkDz3z7vywEsU2Lk_ZY)<br>
 
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
@@ -35,7 +35,7 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
 
 ### 4.MOCKUP<br>
 
-https://balsamiq.cloud/s8rtz1u/pgd5wyf/r2CEB
+[Mockup](https://github.com/trabAquarioInteligente/trab01/tree/master/Mockup)
 
 
 #### 4.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
