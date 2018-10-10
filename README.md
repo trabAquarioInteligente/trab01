@@ -168,26 +168,16 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
 [Modelo Lógico](https://github.com/trabAquarioInteligente/trab01/blob/master/images/modeloLogico.jpeg)<br>
 
 ### 7	MODELO FÍSICO<br>
-        a) inclusão das instruções de criacão das estruturas DDL 
-        (criação de tabelas, alterações, etc..)          
+[Modelo Físico](https://github.com/trabAquarioInteligente/trab01/blob/master/ScriptsSQL/modeloFIsico.sql)<br>         
         
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
-        a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico 
-        b) formato .SQL
+[Detalhamento das Informaçoes](https://github.com/trabAquarioInteligente/trab01/blob/master/ScriptsSQL/detalhamentoInformacao.sql)<br>
 
 #### 8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELAS E INSERÇÃO DOS DADOS
-        a) Junção dos scripts anteriores em um único script 
-        (create para tabelas e estruturas de dados + dados a serem inseridos)
-        b) Criar um novo banco de dados para testar a restauracao 
-        (em caso de falha na restauração o grupo não pontuará neste quesito)
-        c) formato .SQL
+[Sript para criação de tabelas e inserção dos dados](https://github.com/trabAquarioInteligente/trab01/blob/master/ScriptsSQL/criacaoInsercao.sql)<br>
 #### 8.3 INCLUSÃO DO SCRIPT PARA EXCLUSÃO DE TABELAS EXISTENTES, CRIAÇÃO DE TABELA NOVAS E INSERÇÃO DOS DADOS
-        a) Junção dos scripts anteriores em um único script
-        (Drop para exclusão de tabelas + create para tabelas e estruturas de dados + dados a serem inseridos)
-        b) Criar um novo banco de dados para testar a restauracao 
-        (em caso de falha na restauração o grupo não pontuará neste quesito)
-        c) formato .SQL
+[Script para exclusão de tabelas existentes, criação de tabelas novas e inserção dos dados](https://github.com/trabAquarioInteligente/trab01/blob/master/ScriptsSQL/destruirTabelas.sql)<br>
 >## Marco de Entrega 03 em: (27/09/18) <br>
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
