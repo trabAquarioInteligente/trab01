@@ -1,0 +1,104 @@
+﻿create table Cidades(
+	codigo int,
+	cidade varchar(30) not null,
+	PRIMARY KEY (codigo)
+);
+
+create table Endereco(
+	codigo int,
+	numero int not null,
+	rua varchar(30) not null,
+	bairro varchar(30) not null,
+	codCidade int not null,
+	cep varchar(8),
+	PRIMARY KEY (codigo),
+	foreign key(codCidade) references Cidades(codigo)
+);
+
+create table Funcionario(
+	codigo int,
+	nome varchar(80) not null,
+	codEnd int not null,
+	funcao varchar(30),
+	PRIMARY KEY (codigo),
+	foreign key(codEnd) references Endereco(codigo)
+);
+
+create table Veiculo(
+	codigo int,
+	refrigerado boolean not null,
+	pesoMaximo float,
+	modelo varchar(50) not null,
+	placa varchar(50) not null,
+	codMot int,
+	PRIMARY KEY (codigo)
+);
+
+create table Motorista(
+	codigo int,
+	codFun int NOT NULL,
+	codVeiculo int NOT NULL,
+	codCidadeEntrega int NOT NUll,
+	PRIMARY KEY (codigo),
+	foreign key(codFun) references Funcionario(codigo),
+	foreign key(codVeiculo) references Veiculo(codigo),
+	foreign key(codCidadeEntrega) references Endereco(codigo)
+);
+
+/*O campo Quantidade é gerado altomaticamente somando o campo quantidade da tabela produto*/
+create table Estoque(
+	quantidadeT int 
+	
+);
+
+create table Produto(
+	codigo int,
+	dataabate date,
+	quantidade int,
+	PRIMARY KEY (codigo)
+);
+
+create table Empresa(
+	codigo int,
+	nome varchar(80),
+	codEnd int,
+	PRIMARY KEY (codigo),
+	foreign key(codEnd) references Endereco(codigo)
+);
+
+create table HorarioEntrega(
+	codigo int,
+	codEmp int,
+	horarioI time,
+	horarioF time,
+	PRIMARY KEY (codigo),
+	foreign key(codEmp) references Empresa(codigo)
+);
+
+create table AcessoSistema(
+	codigo int, /*login*/
+	codFun int, 
+	senha varchar(12),
+	alterarEstoque boolean,
+	agendarEntrega boolean,
+	utilizarSistemadeentrega boolean,
+	cancelarEntrega boolean,
+	PRIMARY KEY (codigo),
+	foreign key(codFun) references Funcionario(codigo)
+);
+
+create table pedido(
+	codigo int,
+	dataAgen date,
+	dataEnt date,
+	quantidade int,
+	codEmp int,
+	codMot int,
+	codEnd int,
+	precoV float,
+	PRIMARY KEY (codigo),
+	foreign key(codEmp) references Empresa(codigo),
+	foreign key(codMot) references Motorista(codigo),
+	foreign key(codEnd) references Endereco(codigo)
+);
+
