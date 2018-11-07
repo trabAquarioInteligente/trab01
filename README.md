@@ -183,77 +183,77 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
     OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
-Consulta Tabela Cidades<br>
+## Consulta Tabela Cidades<br>
 Codigo: select * from Cidades; <br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Cidades.png" alt="Cidades" ><br>
 <br>
 
-Consulta Tabela Endereço<br>
+## Consulta Tabela Endereço<br>
 Codigo: select * from Endereco;
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Endere%C3%A7o.png" alt="Endereço" ><br>
 <br>
 
-Consulta Tabela Veiculo<br>
+## Consulta Tabela Veiculo<br>
 Codigo: select * from Veiculo; <br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Veiculos.png" alt="Veiculo" ><br>
 <br>
 
-Consulta Tabela Acesso Sistema<br>
+## Consulta Tabela Acesso Sistema<br>
 Codigo: select * from acessosistema;<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/acessosistema.png" alt="Acesso Sistema" ><br>
 <br>
 
-Consulta Tabela Clientes<br>
+## Consulta Tabela Clientes<br>
 Codigo: select * from empresa;<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/empresas.png" alt="Clientes" ><br>
 <br>
 
-Consulta Tabela Funcionarios<br>
+## Consulta Tabela Funcionarios<br>
 Codigo: select * from Funcionario;<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/funcionarios.png" alt="Funcionarios" ><br>
 <br>
 
-Consulta Tabela Horario de Entrega<br>
+## Consulta Tabela Horario de Entrega<br>
 Codigo: select * from horarioentrega;<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/horarioentrega.png" alt="Horarios de Entrega" ><br>
 <br>
 
-Consulta Tabela Motorista<br>
+## Consulta Tabela Motorista<br>
 Codigo: select * from motorista;<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/motorista.png" alt="Motorista"><br>
 <br>
 
-Consulta Tabela Pedido<br>
+## Consulta Tabela Pedido<br>
 Codigo: select * from pedido;<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/pedido.png" alt="Pedido"><br>
 <br>
 
-Consulta Tabela Produto<br>
+## Consulta Tabela Produto<br>
 Codigo: select * from produto;<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/produto.png" alt="Produto"><br>
 <br>
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 <br>
-#Consultar Endereços em Vila Velha<br>
+## Consultar Endereços em Vila Velha<br>
 Codigo: select * from endereco where codcidade = 1;
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultas%20Where/endere%C3%A7osemvilavelha.png" alt="Consulta Vila Velha"><br>
 <br>
 
 <br>
-#Consultar Entregas para depois do dia 20/10/2018<br>
+## Consultar Entregas para depois do dia 20/10/2018<br>
 Codigo: select * from pedido where dataent >= '2018-10-20';
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultas%20Where/Entregasparadepoisdodia20102018.png" alt="Entregadas para depois do dia 20/10/2018"><br>
 <br>
 
 <br>
-#Consultar Produtos que estão no estoque antes do dia 20/10/2018<br>
+## Consultar Produtos que estão no estoque antes do dia 20/10/2018<br>
 Codigo: select * from produto where dataabate < '2018-10-20';
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultas%20Where/ProdutosMaisAntigosEstoque.png" alt="Produtos mais antidos no estoque"><br>
 <br>
 
 <br>
-#Consultar funcionarios que são motoristas Velha<br>
+## Consultar funcionarios que são motoristas Velha<br>
 Codigo: select * from funcionario where funcao = 'Motorista';
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultas%20Where/Funcionariosmotorista.png" alt="funcionarios que são motoristas"><br>
 <br>
@@ -261,19 +261,19 @@ Codigo: select * from funcionario where funcao = 'Motorista';
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
 <br>
-#Consultar Endereços em vila velha ou vitoria<br>
+## Consultar Endereços em vila velha ou vitoria<br>
 Codigo: select * from endereco where codcidade = 1 or codcidade = 2;
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultasoperadores/enderecosemvilavelhaouvitoria.png" alt="Endereços em vila velha ou vitoria"><br>
 <br>
 
 <br>
-#Consultar Endereços nos bairros Jabaete e Manguinhos<br>
+##Consultar Endereços nos bairros Jabaete e Manguinhos<br>
 Codigo: select * from funcionario where funcao = 'Motorista';
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultasoperadores/enderecosnosbairrosjabaeteemanguinhos.png" alt="Endereços nos bairros Jabaete e Manguinhos"><br>
 <br>
 
 <br>
-#Consultar Pedidos com Quantidade Maior que 40 e menor que 200<br>
+## Consultar Pedidos com Quantidade Maior que 40 e menor que 200<br>
 Codigo: select * from funcionario where funcao = 'Motorista';
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultasoperadores/pedidoscomquantidademaiorque40emenorque200.png" alt="Pedidos com Quantidade Maior que 40 e menor que 200"><br>
 <br>
