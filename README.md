@@ -224,10 +224,12 @@ Codigo: select * from motorista;<br>
 <br>
 
 Consulta Tabela Pedido<br>
+Codigo: select * from pedido;<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/pedido.png" alt="Pedido"><br>
 <br>
-Codigo: select * from pedido;<br>
+
 Consulta Tabela Produto<br>
+Codigo: select * from produto;<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/produto.png" alt="Produto"><br>
 <br>
 
