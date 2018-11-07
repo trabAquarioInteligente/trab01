@@ -186,6 +186,43 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
 Consulta Tabela Cidades<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Cidades.png" alt="Cidades" ><br>
 <br>
+
+Consulta Tabela Endereço<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Endere%C3%A7o.png" alt="Endereço" ><br>
+<br>
+
+Consulta Tabela Veiculo<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Veiculos.png" alt="Veiculo" ><br>
+<br>
+
+Consulta Tabela Acesso Sistema<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/acessosistema.png" alt="Acesso Sistema" ><br>
+<br>
+
+Consulta Tabela Clientes<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/empresas.png" alt="Clientes" ><br>
+<br>
+
+Consulta Tabela Funcionarios<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/funcionarios.png" alt="Funcionarios" ><br>
+<br>
+
+Consulta Tabela Horario de Entrega<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/horarioentrega.png" alt="Horarios de Entrega" ><br>
+<br>
+
+Consulta Tabela Motorista<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/motorista.png" alt="Motorista"><br>
+<br>
+
+Consulta Tabela Pedido<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/pedido.png" alt="Pedido"><br>
+<br>
+
+Consulta Tabela Produto<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/produto.png" alt="Produto"><br>
+<br>
+
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
