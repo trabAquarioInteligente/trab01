@@ -260,6 +260,24 @@ Codigo: select * from funcionario where funcao = 'Motorista';
 
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
+<br>
+#Consultar Endereços em vila velha ou vitoria<br>
+Codigo: select * from endereco where codcidade = 1 or codcidade = 2;
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultasoperadores/enderecosemvilavelhaouvitoria.png" alt="Endereços em vila velha ou vitoria"><br>
+<br>
+
+<br>
+#Consultar Endereços nos bairros Jabaete e Manguinhos<br>
+Codigo: select * from funcionario where funcao = 'Motorista';
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultasoperadores/enderecosnosbairrosjabaeteemanguinhos.png" alt="Endereços nos bairros Jabaete e Manguinhos"><br>
+<br>
+
+<br>
+#Consultar Pedidos com Quantidade Maior que 40 e menor que 200<br>
+Codigo: select * from funcionario where funcao = 'Motorista';
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultasoperadores/pedidoscomquantidademaiorque40emenorque200.png" alt="Pedidos com Quantidade Maior que 40 e menor que 200"><br>
+<br>
+    
     b) Criar no mínimo 3 consultas com operadores aritméticos 
     c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
