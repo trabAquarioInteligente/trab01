@@ -184,7 +184,7 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
     OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 Consulta Tabela Cidades<br>
-(https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Cidades.png)<br>
+(https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Cidades.png?raw=true "Cidades")<br>
 <br>
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
