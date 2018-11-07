@@ -184,41 +184,49 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
     OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 Consulta Tabela Cidades<br>
+Codigo: select * from Cidades;
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Cidades.png" alt="Cidades" ><br>
 <br>
 
 Consulta Tabela Endereço<br>
+Codigo: select * from Endereco;
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Endere%C3%A7o.png" alt="Endereço" ><br>
 <br>
 
 Consulta Tabela Veiculo<br>
+Codigo: select * from Veiculo; <br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Veiculos.png" alt="Veiculo" ><br>
 <br>
 
 Consulta Tabela Acesso Sistema<br>
+Codigo: select * from acessosistema;<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/acessosistema.png" alt="Acesso Sistema" ><br>
 <br>
 
 Consulta Tabela Clientes<br>
+Codigo: select * from empresa;<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/empresas.png" alt="Clientes" ><br>
 <br>
 
 Consulta Tabela Funcionarios<br>
+Codigo: select * from Funcionario;<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/funcionarios.png" alt="Funcionarios" ><br>
 <br>
 
 Consulta Tabela Horario de Entrega<br>
+Codigo: select * from horarioentrega;<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/horarioentrega.png" alt="Horarios de Entrega" ><br>
 <br>
 
 Consulta Tabela Motorista<br>
+Codigo: select * from motorista;<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/motorista.png" alt="Motorista"><br>
 <br>
 
 Consulta Tabela Pedido<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/pedido.png" alt="Pedido"><br>
 <br>
-
+Codigo: select * from pedido;<br>
 Consulta Tabela Produto<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/produto.png" alt="Produto"><br>
 <br>
