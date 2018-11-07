@@ -1,0 +1,7 @@
+select * from produto where dataabate < '2018-10-20';
+
+select * from pedido where dataent >= '2018-10-20';
+
+select * from endereco where codcidade = 1;
+
+select * from funcionario where funcao = 'Motorista';
