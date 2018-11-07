@@ -234,6 +234,30 @@ Codigo: select * from produto;<br>
 <br>
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
+<br>
+#Consultar Endereços em Vila Velha<br>
+Codigo: select * from endereco where codcidade = 1;
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultas%20Where/endere%C3%A7osemvilavelha.png" alt="Consulta Vila Velha"><br>
+<br>
+
+<br>
+#Consultar Entregas para depois do dia 20/10/2018<br>
+Codigo: select * from pedido where dataent >= '2018-10-20';
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultas%20Where/Entregasparadepoisdodia20102018.png" alt="Entregadas para depois do dia 20/10/2018"><br>
+<br>
+
+<br>
+#Consultar Produtos que estão no estoque antes do dia 20/10/2018<br>
+Codigo: select * from produto where dataabate < '2018-10-20';
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultas%20Where/ProdutosMaisAntigosEstoque.png" alt="Produtos mais antidos no estoque"><br>
+<br>
+
+<br>
+#Consultar funcionarios que são motoristas Velha<br>
+Codigo: select * from funcionario where funcao = 'Motorista';
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultas%20Where/Funcionariosmotorista.png" alt="funcionarios que são motoristas"><br>
+<br>
+
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
     b) Criar no mínimo 3 consultas com operadores aritméticos 
