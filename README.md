@@ -62,8 +62,8 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
         * o mínimo de entidades do modelo conceitual será igual a 5
         
 
-![Alt text](https://github.com/trabAquarioInteligente/trab01/blob/master/images/ModeloConceitual.jpeg?raw=true "Modelo Conceitual")
-[Modelo Conceitual - Formato BrModelo](https://github.com/trabAquarioInteligente/trab01/blob/master/images/ModeloConceitual.jpeg)<br>
+![Alt text](https://raw.githubusercontent.com/trabAquarioInteligente/trab01/master/images/Conceitual.png)
+[Modelo Conceitual - Formato BrModelo](https://github.com/trabAquarioInteligente/trab01/blob/master/images/Conceitual.png)<br>
     
     B) NOTACAO UML (Caso esteja fazendo a disciplina de analise)
     C) QUALIDADE 
@@ -163,9 +163,9 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
 
 
 ### 6	MODELO LÓGICO<br>
-![Alt text](https://github.com/trabAquarioInteligente/trab01/blob/master/images/modeloLogico.jpeg?raw=true "Modelo Lógico")
+![Alt text](https://raw.githubusercontent.com/trabAquarioInteligente/trab01/master/images/Logico.png)
         
-[Modelo Lógico](https://github.com/trabAquarioInteligente/trab01/blob/master/images/modeloLogico.jpeg)<br>
+[Modelo Lógico](https://github.com/trabAquarioInteligente/trab01/blob/master/images/Logico.png)<br>
 
 ### 7	MODELO FÍSICO<br>
 [Modelo Físico](https://github.com/trabAquarioInteligente/trab01/blob/master/ScriptsSQL/modeloFIsico.sql)<br>         
