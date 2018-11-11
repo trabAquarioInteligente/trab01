@@ -106,6 +106,14 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
     DataAbate: Corresponde a data em que o porco responsável pela banda em questão foi abatido.
     Quantidade: Diz respeito à quantidade inteira de bandas oriundas do abate.
     ID: Código utilizado como chave primária da tabela.
+    
+    Tabela “FUNCIONARIO”: Contém todas informações pertinentes ao nosso funcionário.
+    Nome: Nome do funcionário.
+    CPF: Corresponde ao número do cadastro de pessoa física do funcionário em questão.
+    CargaHoraria: Quantidade de horas que o funcionário trabalha em um dia.
+    IDfuncinario: Código utilizado como chave primária da tabela.
+    Senha: Utilizado para login do funcionário no sistema.
+
 
 
 
