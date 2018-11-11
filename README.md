@@ -143,6 +143,13 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
     Tabela “Contato“: Necessário para guardar número para contato com o cliente.
     Telefone: Número utilizado como um meio de contato.
 
+    Tabela “_Pedido“: Armazena informações pertinentes a cada pedido.
+    DataEntrega: Data a qual será feita a entrega do pedido.
+    NumeroBandas: Quantidade de bandas requisitadas no pedido efetuado pelo cliente.
+    ID: Código utilizado como chave primária da tabela.
+    Fk_Cliente_ID: Campo utilizado para relacionar esta tabela com “CLIENTE”.
+    Fk_Funcionario_IDfuncionario: Campo utilizado para relacionar esta tabela com “FUNCIONARIO”.
+
 
 
 
