@@ -140,6 +140,9 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
     Nome: Nome da cidade.
     ID: Código utilizado como chave primária da tabela.
 
+    Tabela “Contato“: Necessário para guardar número para contato com o cliente.
+    Telefone: Número utilizado como um meio de contato.
+
 
 
 
