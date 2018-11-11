@@ -158,6 +158,10 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
     Fk _Automovel_ID: Campo utilizado para relacionar esta tabela com “AUTOMOVEL”.
     Fk_Cliente_ID: Campo utilizado para relacionar esta tabela com “CLIENTE”.
 
+    Tabela “Recebe“: Necessário para saber quando o cliente estará apto para receber a entrega.
+    Fk_HorarioRecebimento_ID: Campo utilizado para relacionar esta tabela com “HorarioRecebimento”.
+    Fk_Cliente_ID: Campo utilizado para relacionar esta tabela com “CLIENTE”.
+
 
 
 ### 6	MODELO LÓGICO<br>
