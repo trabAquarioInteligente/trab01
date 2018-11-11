@@ -127,6 +127,9 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
     HorarioFim: Horário que se dá fim à disponibilidade do cliente para recebimento da carga.
     ID: Código utilizado como chave primária da tabela.
 
+    Tabela “Logradouro“: Necessário para armazenar os diferentes tipos de logradouros. 
+    ID: Código utilizado como chave primária da tabela. 
+    Descrição: Qual o tipo de logradouro.
 
 
 
