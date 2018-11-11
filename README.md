@@ -131,6 +131,10 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
     ID: Código utilizado como chave primária da tabela. 
     Descrição: Qual o tipo de logradouro.
 
+    Tabela “Bairro“: Utilizada para armazenar o nome dos possíveis bairros para entrega.
+    Nome: Nome do bairro.
+    ID: Código utilizado como chave primária da tabela.
+    Fk_Cidade_ID: Campo utilizado para relacionar esta tabela com “CIDADE”.
 
 
 
