@@ -169,7 +169,9 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
     Tabela “Pertence“: Auxilia na utilização da tabela “FUNCIONARIO”.
     Fk_Funcionario_IDfuncionario: Campo utilizado para relacionar esta tabela com “FUNCIONARIO”.
 
-
+    Tabela “Adiciona“: Pertinente para relacionar e proporcionar que o funcionário aumente a quantidade do produto no estoque.
+    Fk_Funcionario_IDfuncionario: Campo utilizado para relacionar esta tabela com “FUNCIONARIO”.
+    Fk_BandaPorco_ID: Campo utilizado para relacionar esta tabela com “BandaPorco”.
 
 
 ### 6	MODELO LÓGICO<br>
