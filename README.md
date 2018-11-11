@@ -113,6 +113,15 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
     CargaHoraria: Quantidade de horas que o funcionário trabalha em um dia.
     IDfuncinario: Código utilizado como chave primária da tabela.
     Senha: Utilizado para login do funcionário no sistema.
+    
+    Tabela “ENDERECO”: Necessário para armazenar o endereço de entrega dos pedidos efetuados por nossos clientes.
+    Nome: Nome do local onde fica localizado a empresa cliente.
+    ID: Código utilizado como chave primária da tabela.
+    Numero: Corresponde ao número da propriedade.
+    Complemento: Informações adicionais à cerca do endereço.
+    Fk_Cliente_ID: Campo utilizado para relacionar esta tabela com “CLIENTE”.
+    Fk_Logradouro_ID: Campo utilizado para relacionar esta tabela com “LOGRADOURO”.
+
 
 
 
