@@ -154,6 +154,9 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
     Fk_BandaPorco_ID: Campo utilizado para relacionar esta tabela com “BandaPorco”.
     Fk__Pedido_ID: Campo utilizado para relacionar esta tabela com “_PEDIDO”.
 
+    Tabela “Entrega“: Utilizada para saber o responsável pela entrega e para quem.
+    Fk _Automovel_ID: Campo utilizado para relacionar esta tabela com “AUTOMOVEL”.
+    Fk_Cliente_ID: Campo utilizado para relacionar esta tabela com “CLIENTE”.
 
 
 
