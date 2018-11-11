@@ -162,7 +162,7 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
     Fk_HorarioRecebimento_ID: Campo utilizado para relacionar esta tabela com “HorarioRecebimento”.
     Fk_Cliente_ID: Campo utilizado para relacionar esta tabela com “CLIENTE”.
 
-    Tabela “Compoe“: Utilizada para fazer a relação
+    Tabela “Compoe“: Utilizada para facilitar a relação das tabelas "BAIRRO" e "ENDERECO".
     Fk_Endereco_ID: Campo utilizado para relacionar esta tabela com “ENDERECO”.
     Fk_Bairro_ID: Campo utilizado para relacionar esta tabela com “BAIRRO”.
     
