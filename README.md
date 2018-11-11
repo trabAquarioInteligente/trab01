@@ -165,6 +165,10 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
     Tabela “Compoe“: Utilizada para fazer a relação
     Fk_Endereco_ID: Campo utilizado para relacionar esta tabela com “ENDERECO”.
     Fk_Bairro_ID: Campo utilizado para relacionar esta tabela com “BAIRRO”.
+    
+    Tabela “Pertence“: Auxilia na utilização da tabela “FUNCIONARIO”.
+    Fk_Funcionario_IDfuncionario: Campo utilizado para relacionar esta tabela com “FUNCIONARIO”.
+
 
 
 
