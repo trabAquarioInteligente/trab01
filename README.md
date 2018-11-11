@@ -101,6 +101,12 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
     NomeFiciticio: Nome do cliente (empresa).
     ID: Código utilizado como chave primária da tabela.
     CNPJ: Corresponde ao número do cadastro nacional de pessoa jurídica do cliente em questão. 
+    
+    Tabela “BandaPorco”: Informações pertinentes ao nosso produto.
+    DataAbate: Corresponde a data em que o porco responsável pela banda em questão foi abatido.
+    Quantidade: Diz respeito à quantidade inteira de bandas oriundas do abate.
+    ID: Código utilizado como chave primária da tabela.
+
 
 
 
