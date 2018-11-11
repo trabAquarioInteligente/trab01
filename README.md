@@ -63,7 +63,7 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
         
 
 ![Alt text](https://raw.githubusercontent.com/trabAquarioInteligente/trab01/master/images/Conceitual.png)
-[Modelo Conceitual - Formato BrModelo](https://github.com/trabAquarioInteligente/trab01/blob/master/images/Conceitual.png)<br>
+[Modelo Conceitual - Formato BrModelo]https://(github.com/trabAquarioInteligente/trab01/blob/master/images/modeloConceitualATT.png)<br>
     
     B) NOTACAO UML (Caso esteja fazendo a disciplina de analise)
     C) QUALIDADE 
@@ -165,7 +165,7 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
 ### 6	MODELO LÓGICO<br>
 ![Alt text](https://raw.githubusercontent.com/trabAquarioInteligente/trab01/master/images/Logico.png)
         
-[Modelo Lógico](https://github.com/trabAquarioInteligente/trab01/blob/master/images/Logico.png)<br>
+[Modelo Lógico](https://github.com/trabAquarioInteligente/trab01/blob/master/images/L%C3%B3gico_1.png)<br>
 
 ### 7	MODELO FÍSICO<br>
 [Modelo Físico](https://github.com/trabAquarioInteligente/trab01/blob/master/ScriptsSQL/modeloFIsico.sql)<br>         
