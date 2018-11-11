@@ -150,6 +150,9 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
     Fk_Cliente_ID: Campo utilizado para relacionar esta tabela com “CLIENTE”.
     Fk_Funcionario_IDfuncionario: Campo utilizado para relacionar esta tabela com “FUNCIONARIO”.
 
+    Tabela “Da_baixa“: Necessário para fazer o controle da quantidade do nosso produto, dando baixa quando for efetuado algum pedido.
+    Fk_BandaPorco_ID: Campo utilizado para relacionar esta tabela com “BandaPorco”.
+    Fk__Pedido_ID: Campo utilizado para relacionar esta tabela com “_PEDIDO”.
 
 
 
