@@ -122,6 +122,10 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
     Fk_Cliente_ID: Campo utilizado para relacionar esta tabela com “CLIENTE”.
     Fk_Logradouro_ID: Campo utilizado para relacionar esta tabela com “LOGRADOURO”.
 
+    Tabela “HorarioRecebimento“: Pertinente para nos fornecer informação à cerca das faixas de horário possíveis para entrega do pedido.
+    HorarioInicio: Horário que se dá início à disponibilidade do cliente para recebimento da carga.
+    HorarioFim: Horário que se dá fim à disponibilidade do cliente para recebimento da carga.
+    ID: Código utilizado como chave primária da tabela.
 
 
 
