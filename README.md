@@ -96,6 +96,12 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
     ID: Código utilizado como chave primária da tabela.
     Fk_Funcionario_IDfuncinario: Campo utilizado para relacionar esta tabela com “FUNCIONARIO”.
     Fk_Cidade_ID: Campo utilizado para relacionar esta tabela com “CIDADE”.
+    
+    Tabela “CLIENTE”: Responsável por armazenar informações de identificação do cliente.
+    NomeFiciticio: Nome do cliente (empresa).
+    ID: Código utilizado como chave primária da tabela.
+    CNPJ: Corresponde ao número do cadastro nacional de pessoa jurídica do cliente em questão. 
+
 
 
 
