@@ -180,11 +180,11 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
 [Modelo Lógico](https://github.com/trabAquarioInteligente/trab01/blob/master/images/L%C3%B3gico_1.png)<br>
 
 ### 7	MODELO FÍSICO<br>
-[Modelo Físico](https://github.com/trabAquarioInteligente/trab01/blob/master/ScriptsSQL/modeloFIsico.sql)<br>         
+[Modelo Físico](https://github.com/trabAquarioInteligente/trab01/blob/master/ScriptsSQL/modeloFisico2.sql)<br>         
         
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
-[Detalhamento das Informaçoes](https://github.com/trabAquarioInteligente/trab01/blob/master/ScriptsSQL/detalhamentoInformacao.sql)<br>
+[Inclusão](https://github.com/trabAquarioInteligente/trab01/blob/master/ScriptsSQL/insercao2.sql)<br>
 
 #### 8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELAS E INSERÇÃO DOS DADOS
 [Sript para criação de tabelas e inserção dos dados](https://github.com/trabAquarioInteligente/trab01/blob/master/ScriptsSQL/criacaoInsercao.sql)<br>
