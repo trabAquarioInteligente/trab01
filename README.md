@@ -249,27 +249,30 @@ Codigo: select * from _pedido; <br>
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 <br>
-## Consultar Endereços em Vila Velha<br>
-Codigo: select * from endereco where codcidade = 1;
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultas%20Where/endere%C3%A7osemvilavelha.png" alt="Consulta Vila Velha"><br>
+## Consultar tabela Automovel<br>
+Codigo: select * from automovel where modelo = 'Friorino';
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/WhereSql/Automovel.jpg?raw=true" 
+alt="Consulta Automovel"><br>
 <br>
 
 <br>
-## Consultar Entregas para depois do dia 20/10/2018<br>
-Codigo: select * from pedido where dataent >= '2018-10-20';
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultas%20Where/Entregasparadepoisdodia20102018.png" alt="Entregadas para depois do dia 20/10/2018"><br>
+## Consulta Bairro<br>
+Codigo:select * from bairro where nome = 'Serra Dourada';
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/WhereSql/Bairro.jpg?raw=true" alt="Consulta Bairro"><br>
 <br>
 
 <br>
-## Consultar Produtos que estão no estoque antes do dia 20/10/2018<br>
-Codigo: select * from produto where dataabate < '2018-10-20';
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultas%20Where/ProdutosMaisAntigosEstoque.png" alt="Produtos mais antidos no estoque"><br>
+## Consultar BandaPorco<br>
+Codigo: select * from bandaporco where quantidade = 50;
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/WhereSql/BandaPorco.jpg?raw=true" 
+alt="Consultar BandaPorco"><br>
 <br>
 
 <br>
-## Consultar funcionarios que são motoristas Velha<br>
+## Consultar Logradouro<br>
 Codigo: select * from funcionario where funcao = 'Motorista';
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultas%20Where/Funcionariosmotorista.png" alt="funcionarios que são motoristas"><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/WhereSql/Logradouro.png?raw=true" 
+alt="Consulta Logradouro"><br>
 <br>
 
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
