@@ -195,55 +195,57 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
     OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
-## Consulta Tabela Cidades<br>
-Codigo: select * from Cidades; <br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Cidades.png" alt="Cidades" ><br>
+## Consulta Tabela Automovel<br>
+Codigo: select * from automovel; <br>
+<img src="https://raw.githubusercontent.com/trabAquarioInteligente/trab01/master/images/SelectSQL/SelectAutomovel.png" alt="" ><br>
 <br>
 
-## Consulta Tabela Endereço<br>
-Codigo: select * from Endereco;
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Endere%C3%A7o.png" alt="Endereço" ><br>
+## Consulta Tabela Bairro<br>
+Codigo: select * from bairro; <br>
+<img src="https://raw.githubusercontent.com/trabAquarioInteligente/trab01/master/images/SelectSQL/SelectBairro.png" alt="" ><br>
 <br>
 
-## Consulta Tabela Veiculo<br>
-Codigo: select * from Veiculo; <br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Veiculos.png" alt="Veiculo" ><br>
+
+## Consulta Tabela Banda de Porco<br>
+Codigo: select * from bandaporco; <br>
+<img src="https://raw.githubusercontent.com/trabAquarioInteligente/trab01/master/images/SelectSQL/SelectBandaPorco.png" alt="" ><br>
 <br>
 
-## Consulta Tabela Acesso Sistema<br>
-Codigo: select * from acessosistema;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/acessosistema.png" alt="Acesso Sistema" ><br>
+## Consulta Tabela Cidade<br>
+Codigo: select * from cidade; <br>
+<img src="https://raw.githubusercontent.com/trabAquarioInteligente/trab01/master/images/SelectSQL/SelectCidade.png" alt="" ><br>
 <br>
 
-## Consulta Tabela Clientes<br>
-Codigo: select * from empresa;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/empresas.png" alt="Clientes" ><br>
+## Consulta Tabela Contato<br>
+Codigo: select * from contato; <br>
+<img src="https://raw.githubusercontent.com/trabAquarioInteligente/trab01/master/images/SelectSQL/SelectContato.png" alt="" ><br>
 <br>
 
-## Consulta Tabela Funcionarios<br>
-Codigo: select * from Funcionario;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/funcionarios.png" alt="Funcionarios" ><br>
+## Consulta Tabela Endereco<br>
+Codigo: select * from endereco; <br>
+<img src="https://raw.githubusercontent.com/trabAquarioInteligente/trab01/master/images/SelectSQL/SelectEndereco.png" alt="" ><br>
 <br>
 
-## Consulta Tabela Horario de Entrega<br>
-Codigo: select * from horarioentrega;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/horarioentrega.png" alt="Horarios de Entrega" ><br>
+## Consulta Tabela Funcionario<br>
+Codigo: select * from funcionario; <br>
+<img src="https://raw.githubusercontent.com/trabAquarioInteligente/trab01/master/images/SelectSQL/SelectFuncionario.png" alt="" ><br>
 <br>
 
-## Consulta Tabela Motorista<br>
-Codigo: select * from motorista;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/motorista.png" alt="Motorista"><br>
+## Consulta Tabela Horario Receber<br>
+Codigo: select * from horariorecebimento; <br>
+<img src="https://raw.githubusercontent.com/trabAquarioInteligente/trab01/master/images/SelectSQL/SelectHorario.png" alt="" ><br>
+<br>
+
+## Consulta Tabela Logradouro<br>
+Codigo: select * from logradouro; <br>
+<img src="https://raw.githubusercontent.com/trabAquarioInteligente/trab01/master/images/SelectSQL/SelectLogradouro.png" alt="" ><br>
 <br>
 
 ## Consulta Tabela Pedido<br>
-Codigo: select * from pedido;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/pedido.png" alt="Pedido"><br>
+Codigo: select * from _pedido; <br>
+<img src="https://raw.githubusercontent.com/trabAquarioInteligente/trab01/master/images/SelectSQL/SelectPedido.png" alt="" ><br>
 <br>
 
-## Consulta Tabela Produto<br>
-Codigo: select * from produto;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/produto.png" alt="Produto"><br>
-<br>
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 <br>
