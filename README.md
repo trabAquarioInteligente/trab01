@@ -308,8 +308,7 @@ Codigo: select * from funcionario where funcao = 'Motorista';
         <br>
         ## Quais placas de caminhões cada funcionario está relacionado<br>
 Codigo: select funcionario.nome, funcionario.cpf, automovel.placa from funcionario inner join automovel on (funcionario.idfuncinario = automovel.fk_funcionario_idfuncinario);
-        <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultajoin/relacao_funcionario_veiculoplaca.png
-" alt="Quais placas de caminhões cada funcionario está relacionado"><br>
+        <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultajoin/relacao_funcionario_veiculoplaca.png" alt="Quais placas de caminhões cada funcionario está relacionado"><br>
 <br>
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
