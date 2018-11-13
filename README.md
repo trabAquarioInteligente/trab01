@@ -211,7 +211,7 @@ Codigo: select * from bairro; <br>
 
 ## Consulta Tabela Banda de Porco<br>
 Codigo: select * from bandaporco; <br>
-<img src="https://raw.githubusercontent.com/trabAquarioInteligente/trab01/master/images/SelectSQL/SelectBandaPorco.png" alt="" ><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/bandaporco.png" alt="Consulta tabela banda de porco" ><br>
 <br>
 
 ## Consulta Tabela Cidade<br>
@@ -221,22 +221,22 @@ Codigo: select * from cidade; <br>
 
 ## Consulta Tabela Contato<br>
 Codigo: select * from contato; <br>
-<img src="https://raw.githubusercontent.com/trabAquarioInteligente/trab01/master/images/SelectSQL/SelectContato.png" alt="" ><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/contato.png" alt="Consulta tabela Contatos" ><br>
 <br>
 
 ## Consulta Tabela Endereco<br>
 Codigo: select * from endereco; <br>
-<img src="https://raw.githubusercontent.com/trabAquarioInteligente/trab01/master/images/SelectSQL/SelectEndereco.png" alt="" ><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/endereco.png" alt="Consulta tabela Endereço" ><br>
 <br>
 
 ## Consulta Tabela Funcionario<br>
 Codigo: select * from funcionario; <br>
-<img src="https://raw.githubusercontent.com/trabAquarioInteligente/trab01/master/images/SelectSQL/SelectFuncionario.png" alt="" ><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/funcionario.png" alt="Consulta tabela funcionario" ><br>
 <br>
 
 ## Consulta Tabela Horario Receber<br>
 Codigo: select * from horariorecebimento; <br>
-<img src="https://raw.githubusercontent.com/trabAquarioInteligente/trab01/master/images/SelectSQL/SelectHorario.png" alt="" ><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/horario.png" alt="Consulta tabela Horario de Recebimento" ><br>
 <br>
 
 ## Consulta Tabela Logradouro<br>
@@ -246,7 +246,7 @@ Codigo: select * from logradouro; <br>
 
 ## Consulta Tabela Pedido<br>
 Codigo: select * from _pedido; <br>
-<img src="https://raw.githubusercontent.com/trabAquarioInteligente/trab01/master/images/SelectSQL/SelectPedido.png" alt="" ><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/pedido.png" alt="Consulta Tabela Pedido" ><br>
 <br>
 
 
