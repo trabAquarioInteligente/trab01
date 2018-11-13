@@ -89,7 +89,7 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
     
     Tabela “AUTOMOVEL”: Contém todas informações pertinentes ao automóvel.
     Placa: Placa de identificação do automóvel.
-    IsRefrigerado: Diz respeito se há ou não refrigeração.
+    Tipo: Diz respeito se há ou não refrigeração.
     Carga_Maxima: Quantidade máxima de carga capaz de ser transportada.
     Modelo: Refere-se ao modelo do automóvel.
     ID: Código utilizado como chave primária da tabela.
