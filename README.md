@@ -61,9 +61,8 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
         * O protótipo deve possui no mínimo duas relações N para N
         * o mínimo de entidades do modelo conceitual será igual a 5
         
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConceitualVer%C3%A7%C3%A3ofinal.png" alt="Modelo Conceitual" ><br>
 
-![Alt text](https://raw.githubusercontent.com/trabAquarioInteligente/trab01/master/images/Conceitual.png)
-[Modelo Conceitual - Formato BrModelo]https://(github.com/trabAquarioInteligente/trab01/blob/master/images/modeloConceitualATT.png)<br>
     
     B) NOTACAO UML (Caso esteja fazendo a disciplina de analise)
     C) QUALIDADE 
