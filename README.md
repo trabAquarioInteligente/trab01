@@ -267,6 +267,7 @@ Codigo:select * from bairro where nome = 'Serra Dourada';
 <br>
 ## Consultar BandaPorco<br>
 Codigo: select * from bandaporco where quantidade = 50;
+<br>mudar
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/WhereSql/BandaPorco.jpg?raw=true" 
 alt="Consultar BandaPorco"><br>
 <br>
