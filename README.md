@@ -174,7 +174,7 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
 
 
 ### 6	MODELO LÓGICO<br>
-![Alt text](https://raw.githubusercontent.com/trabAquarioInteligente/trab01/master/images/Logico.png)
+![Alt text](https://github.com/trabAquarioInteligente/trab01/blob/master/images/L%C3%B3gico_1ver%C3%A7%C3%A3ofinal.png)
         
 [Modelo Lógico](https://github.com/trabAquarioInteligente/trab01/blob/master/images/L%C3%B3gico_1.png)<br>
 
