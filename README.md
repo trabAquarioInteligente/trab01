@@ -205,7 +205,7 @@ Codigo: select * from automovel; <br>
 
 ## Consulta Tabela Bairro<br>
 Codigo: select * from bairro; <br>
-<img src="https://raw.githubusercontent.com/trabAquarioInteligente/trab01/master/images/SelectSQL/SelectBairro.png" alt="" ><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/bairro.png" alt="Consulta Tabela Bairro" ><br>
 <br>
 
 
