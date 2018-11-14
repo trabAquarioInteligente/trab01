@@ -334,6 +334,13 @@ Codigo: select funcionario.nome, funcionario.cpf, automovel.placa from funcionar
         <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultajoin/relacao_funcionario_veiculoplaca.png" alt="Quais placas de caminhões cada funcionario está relacionado"><br>
 <br>
 
+<h2>Qual cidade cada caminhoneiro atende</h2><br>
+Codigo: select f.nome as "nome do funcionario", ci.nome as "nome da cidade" from funcionario f <br>
+inner join automovel au on (f.idfuncionario = au.fk_funcionario_idfuncionario)<br>
+inner join cidade ci on (au.fk_cidade_id = ci.id);<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultajoin/juncaocidadefuncionario.png" alt="Qual cidade cada caminhoneiro atende"><br>
+<br>
+
 <h2>Qual o telefone de cada funcionario</h2><br>
 Codigo: select f.nome, co.telefone from funcionario f <br>
 inner join contato co on (f.idfuncionario = fk_funcionario_idfuncionario)<br>
