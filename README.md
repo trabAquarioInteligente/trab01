@@ -249,6 +249,22 @@ Codigo: select * from _pedido; <br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/pedido.png" alt="Consulta Tabela Pedido" ><br>
 <br>
 
+## Consulta Tabelas de Relacionamento
+<br>
+Codigo: select * from adiciona; <br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/pedido.png" alt="Consulta Tabela Pedido" ><br>
+<br>
+Codigo: select * from Da_baixa; <br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/pedido.png" alt="Consulta Tabela Pedido" ><br>
+<br>
+Codigo: select * from Entrega; <br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/pedido.png" alt="Consulta Tabela Pedido" ><br>
+<br>
+Codigo: select * from recebe; <br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/pedido.png" alt="Consulta Tabela Pedido" ><br>
+<br>
+Codigo: select * from Compoe;<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/pedido.png" alt="Consulta Tabela Pedido" ><br>
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 <br>
