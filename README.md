@@ -282,7 +282,7 @@ Codigo:select * from bairro where nome = 'Serra Dourada';
 
 <br>
 ## Consultar BandaPorco<br>
-Consultando bandas de porco em estoque
+Consultando bandas de porco em estoque  <br>
 Codigo: select * from bandaporco where quantidade > 0; <br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultas%20Where/whereBandaporco.png" 
 alt="Consultar BandaPorco em estoque"><br>
