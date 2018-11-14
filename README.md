@@ -371,10 +371,22 @@ order by cl.nomeficticio;<br>
 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
 
-<h2>Número de vendas cada funcionario realizou</h2>
+<h2>Número de vendas cada funcionário realizou</h2>
 Codigo: select f.nome as "nome do funcionario", count (f.nome) as "numero de vendas" from funcionario f<br>
 inner join _pedido pe on (f.idfuncionario = pe.fk_funcionario_idfuncionario) group by f.nome;<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyvendas.png" alt="Número de vendas cada funcionario realizou"><br>
+
+<h2>Número telefones que cada funcionário tem</h2>
+Codigo: select f.nome, count(nome) from funcionario f <br>
+inner join contato co on (f.idfuncionario = fk_funcionario_idfuncionario) <br>
+group by nome order by nome;<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbynumerodetelefones.png" alt="Quantos telefones cada funcionario tem"><br>
+
+<h2>Número de vezes que cada funcionário adicionou produto no estoque</h2>
+Codigo: select f.nome as "nome do funcionario", count (f.nome) as "quantas vezes o funcionario adicionou banda de porco no estoque" <br>
+from funcionario f<br>
+inner join adiciona pe on (f.idfuncionario = pe.fk_funcionario_idfuncionario) group by f.nome;<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyadiciona.png" alt="Número de vezes que cada funcionário adicionou produto no estoque"><br>
 
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
