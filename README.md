@@ -355,6 +355,16 @@ inner join bandaporco ba on (ad.fk_bandaporco_id = ba.id)<br>
 order by f.nome;<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultajoin/juncaofuncionariobanda.png" alt="Qual banda de porco cada funcionario adicionou no estoque"><br>
 
+<h2>Qual Venda cada funcionario fez</h2><br>
+Codigo: select f.nome as "nome do funcionario", pe.dataentrega, pe.numerobandas, cl.nomeficticio as "nome do cliente"<br> 
+from funcionario f<br> 
+inner join _pedido pe on (f.idfuncionario = pe.fk_funcionario_idfuncionario)<br>
+inner join cliente cl on (pe.fk_cliente_id = cl.id)<br>
+order by f.nome;<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultajoin/juncaofuncionariopedidocliente.png" alt="Qual Venda cada funcionario fez"><br>
+
+
+
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
