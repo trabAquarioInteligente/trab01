@@ -329,33 +329,33 @@ Codigo: select * from funcionario where funcao = 'Motorista';
         a) Uma junção que envolva todas as tabelas possuindo no mínimo 3 registros no resultado
         b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
 <br>
-<h2>Quais placas de caminhões cada funcionario está relacionado</h2><br>
+<h2>Quais placas de caminhões cada funcionario está relacionado</h2>
 Codigo: select funcionario.nome, funcionario.cpf, automovel.placa from funcionario inner join automovel on (funcionario.idfuncinario = automovel.fk_funcionario_idfuncinario);
         <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultajoin/relacao_funcionario_veiculoplaca.png" alt="Quais placas de caminhões cada funcionario está relacionado"><br>
 <br>
 
-<h2>Qual cidade cada caminhoneiro atende</h2><br>
+<h2>Qual cidade cada caminhoneiro atende</h2>
 Codigo: select f.nome as "nome do funcionario", ci.nome as "nome da cidade" from funcionario f <br>
 inner join automovel au on (f.idfuncionario = au.fk_funcionario_idfuncionario)<br>
 inner join cidade ci on (au.fk_cidade_id = ci.id);<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultajoin/juncaocidadefuncionario.png" alt="Qual cidade cada caminhoneiro atende"><br>
 <br>
 
-<h2>Qual o telefone de cada funcionario</h2><br>
+<h2>Qual o telefone de cada funcionario</h2>
 Codigo: select f.nome, co.telefone from funcionario f <br>
 inner join contato co on (f.idfuncionario = fk_funcionario_idfuncionario)<br>
 order by nome;<br>
         <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultajoin/juncaofuncionariotelefone.png" alt="Qual o telefone de cada funcionario"><br>
 <br>
 
-<h2>Qual banda de porco cada funcionario adicionou no estoque</h2><br>
+<h2>Qual banda de porco cada funcionario adicionou no estoque</h2>
 Codigo: select f.nome, ba.dataabate from funcionario f <br>
 inner join adiciona ad on (f.idfuncionario = ad.fk_funcionario_idfuncionario)<br>
 inner join bandaporco ba on (ad.fk_bandaporco_id = ba.id)<br>
 order by f.nome;<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultajoin/juncaofuncionariobanda.png" alt="Qual banda de porco cada funcionario adicionou no estoque"><br>
 
-<h2>Qual Venda cada funcionario fez</h2><br>
+<h2>Qual Venda cada funcionario fez</h2>
 Codigo: select f.nome as "nome do funcionario", pe.dataentrega, pe.numerobandas, cl.nomeficticio as "nome do cliente"<br> 
 from funcionario f<br> 
 inner join _pedido pe on (f.idfuncionario = pe.fk_funcionario_idfuncionario)<br>
@@ -363,7 +363,11 @@ inner join cliente cl on (pe.fk_cliente_id = cl.id)<br>
 order by f.nome;<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultajoin/juncaofuncionariopedidocliente.png" alt="Qual Venda cada funcionario fez"><br>
 
-
+<h2>Qual venda está relacionada a qual cliente</h2>
+Codigo: select cl.nomeficticio, pe.dataentrega, pe.numerobandas from _pedido pe <br>
+inner join cliente cl on (pe.fk_cliente_id = cl.id) <br>
+order by cl.nomeficticio;<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultajoin/juncaopedidocliente.png" alt="Qual venda está relacionada a qual cliente"><br>
 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
