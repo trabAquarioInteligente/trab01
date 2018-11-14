@@ -371,7 +371,7 @@ order by cl.nomeficticio;<br>
 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
 
-<h2>Número de vendas cada funcionário realizou</h2>
+<h2>Número de vendas que cada funcionário realizou</h2>
 Codigo: select f.nome as "nome do funcionario", count (f.nome) as "numero de vendas" from funcionario f<br>
 inner join _pedido pe on (f.idfuncionario = pe.fk_funcionario_idfuncionario) group by f.nome;<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyvendas.png" alt="Número de vendas cada funcionario realizou"><br>
@@ -387,6 +387,11 @@ Codigo: select f.nome as "nome do funcionario", count (f.nome) as "quantas vezes
 from funcionario f<br>
 inner join adiciona pe on (f.idfuncionario = pe.fk_funcionario_idfuncionario) group by f.nome;<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyadiciona.png" alt="Número de vezes que cada funcionário adicionou produto no estoque"><br>
+
+<h2>Número de caminhões que são refrigerados e que não são refrigerados</h2>
+Codigo: select isrefrigerado, count(isrefrigerado) from automovel group by isrefrigerado;<br>
+inner join adiciona pe on (f.idfuncionario = pe.fk_funcionario_idfuncionario) group by f.nome;<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbynumerodecaminhoesrefrigeradosoun%C3%A3o.png" alt="Número de caminhões que são refrigerados e que não são refrigerados"><br>
 
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
