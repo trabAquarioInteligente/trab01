@@ -370,6 +370,12 @@ order by cl.nomeficticio;<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultajoin/juncaopedidocliente.png" alt="Qual venda está relacionada a qual cliente"><br>
 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
+
+<h2>Número de vendas cada funcionario realizou</h2>
+Codigo: select f.nome as "nome do funcionario", count (f.nome) as "numero de vendas" from funcionario f<br>
+inner join _pedido pe on (f.idfuncionario = pe.fk_funcionario_idfuncionario) group by f.nome;<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyvendas.png" alt="Número de vendas cada funcionario realizou"><br>
+
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
         a) Uma junção que envolva Self Join
