@@ -393,6 +393,11 @@ Codigo: select isrefrigerado, count(isrefrigerado) from automovel group by isref
 inner join adiciona pe on (f.idfuncionario = pe.fk_funcionario_idfuncionario) group by f.nome;<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbynumerodecaminhoesrefrigeradosoun%C3%A3o.png" alt="Número de caminhões que são refrigerados e que não são refrigerados"><br>
 
+
+Codigo: select horarioinicio, horariofim, count(fk_horariorecebimento_id) from recebe re<br>
+inner join horariorecebimento ho on (re.fk_horariorecebimento_id = ho.id)<br>
+group by fk_horariorecebimento_id, horarioinicio, horariofim;<br>
+
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
         a) Uma junção que envolva Self Join
