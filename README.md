@@ -252,19 +252,19 @@ Codigo: select * from _pedido; <br>
 ## Consulta Tabelas de Relacionamento
 <br>
 Codigo: select * from adiciona; <br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/pedido.png" alt="Consulta Tabela Pedido" ><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/Adiciona.png" alt="Consulta Tabela Adiciona" ><br>
 <br>
 Codigo: select * from Da_baixa; <br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/pedido.png" alt="Consulta Tabela Pedido" ><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/dabaixa.png" alt="Consulta Tabela Da_baixa" ><br>
 <br>
 Codigo: select * from Entrega; <br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/pedido.png" alt="Consulta Tabela Pedido" ><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/Entrega.png" alt="Consulta Tabela Entrega" ><br>
 <br>
 Codigo: select * from recebe; <br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/pedido.png" alt="Consulta Tabela Pedido" ><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/recebe.png" alt="Consulta Tabela Pedido" ><br>
 <br>
 Codigo: select * from Compoe;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/pedido.png" alt="Consulta Tabela Pedido" ><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/compoe.png" alt="Consulta Tabela Pedido" ><br>
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 <br>
