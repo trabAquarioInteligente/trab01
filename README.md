@@ -347,6 +347,14 @@ inner join contato co on (f.idfuncionario = fk_funcionario_idfuncionario)<br>
 order by nome;<br>
         <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultajoin/juncaofuncionariotelefone.png" alt="Qual o telefone de cada funcionario"><br>
 <br>
+
+<h2>Qual banda de porco cada funcionario adicionou no estoque</h2><br>
+Codigo: select f.nome, ba.dataabate from funcionario f <br>
+inner join adiciona ad on (f.idfuncionario = ad.fk_funcionario_idfuncionario)<br>
+inner join bandaporco ba on (ad.fk_bandaporco_id = ba.id)<br>
+order by f.nome;<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultajoin/juncaofuncionariobanda.png" alt="Qual banda de porco cada funcionario adicionou no estoque"><br>
+
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
