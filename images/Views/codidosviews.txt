@@ -1,0 +1,19 @@
+create view endereco_sem_estrangeira as (select en.id, en.nome, en.numero, en.complemento, lo.descricao as "Logradouro", 
+ba.nome as "Bairro", ci.nome as "cidade" from endereco en
+inner join logradouro lo on (en.fk_logradouro_id = lo.id)
+inner join compoe co on (co.fk_endereco_id = en.id)
+inner join bairro ba on (ba.id = co.fk_bairro_id)
+inner join cidade ci on (ci.id = ba.fk_cidade_id));
+
+create view banda_porco_estoque as (select * from bandaporco where quantidade > 0);
+
+create view pedido_agendado as (select pe.dataentrega, pe.numerobandas, cl.nomeficticio from _pedido pe
+inner join cliente cl on (pe.fk_cliente_id = cl.id)
+where (dataentrega - current_date) > 0);
+
+create view caminhoneiro_municipio as (select fu.nome, au.placa, ci.nome as "Cidade" from funcionario fu
+inner join automovel au on (au.fk_funcionario_idfuncionario = fu.idfuncionario)
+inner join cidade ci on (au.fk_cidade_id = ci.id));
+
+
+
