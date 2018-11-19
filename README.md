@@ -405,10 +405,76 @@ inner join cliente cl on (re.fk_cliente_id = cl.id)<br>
 group by nomeficticio order by nomeficticio;<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyclientesentrega.png" alt="Número de horarios de entregas que cada clientes possui"><br>
 
+<h2>Número de horarios de entregas que cada clientes possui</h2>
+Codigo: select cl.nomeficticio, count(cl.nomeficticio) from recebe re<br>
+inner join cliente cl on (re.fk_cliente_id = cl.id)<br>
+group by nomeficticio order by nomeficticio;<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyclientesentrega.png" alt="Número de horarios de entregas que cada clientes possui"><br>
+
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
+<h2>Número de horarios de entregas que cada clientes possui</h2>
+Codigo: select cl.nomeficticio, count(cl.nomeficticio) from recebe re<br>
+inner join cliente cl on (re.fk_cliente_id = cl.id)<br>
+group by nomeficticio order by nomeficticio;<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyclientesentrega.png" alt="Número de horarios de entregas que cada clientes possui"><br>
+
+<h2>Número de horarios de entregas que cada clientes possui</h2>
+Codigo: select cl.nomeficticio, count(cl.nomeficticio) from recebe re<br>
+inner join cliente cl on (re.fk_cliente_id = cl.id)<br>
+group by nomeficticio order by nomeficticio;<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyclientesentrega.png" alt="Número de horarios de entregas que cada clientes possui"><br>
+
+<h2>Número de horarios de entregas que cada clientes possui</h2>
+Codigo: select cl.nomeficticio, count(cl.nomeficticio) from recebe re<br>
+inner join cliente cl on (re.fk_cliente_id = cl.id)<br>
+group by nomeficticio order by nomeficticio;<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyclientesentrega.png" alt="Número de horarios de entregas que cada clientes possui"><br>
+
+<h2>Número de horarios de entregas que cada clientes possui</h2>
+Codigo: select cl.nomeficticio, count(cl.nomeficticio) from recebe re<br>
+inner join cliente cl on (re.fk_cliente_id = cl.id)<br>
+group by nomeficticio order by nomeficticio;<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyclientesentrega.png" alt="Número de horarios de entregas que cada clientes possui"><br>
+
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
         a) Uma junção que envolva Self Join
         b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
+<h2>Número de horarios de entregas que cada clientes possui</h2>
+Codigo: select cl.nomeficticio, count(cl.nomeficticio) from recebe re<br>
+inner join cliente cl on (re.fk_cliente_id = cl.id)<br>
+group by nomeficticio order by nomeficticio;<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyclientesentrega.png" alt="Número de horarios de entregas que cada clientes possui"><br>
+
+<h2>Número de horarios de entregas que cada clientes possui</h2>
+Codigo: select cl.nomeficticio, count(cl.nomeficticio) from recebe re<br>
+inner join cliente cl on (re.fk_cliente_id = cl.id)<br>
+group by nomeficticio order by nomeficticio;<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyclientesentrega.png" alt="Número de horarios de entregas que cada clientes possui"><br>
+
+<h2>Número de horarios de entregas que cada clientes possui</h2>
+Codigo: select cl.nomeficticio, count(cl.nomeficticio) from recebe re<br>
+inner join cliente cl on (re.fk_cliente_id = cl.id)<br>
+group by nomeficticio order by nomeficticio;<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyclientesentrega.png" alt="Número de horarios de entregas que cada clientes possui"><br>
+
+<h2>Número de horarios de entregas que cada clientes possui</h2>
+Codigo: select cl.nomeficticio, count(cl.nomeficticio) from recebe re<br>
+inner join cliente cl on (re.fk_cliente_id = cl.id)<br>
+group by nomeficticio order by nomeficticio;<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyclientesentrega.png" alt="Número de horarios de entregas que cada clientes possui"><br>
+
+<h2>Número de horarios de entregas que cada clientes possui</h2>
+Codigo: select cl.nomeficticio, count(cl.nomeficticio) from recebe re<br>
+inner join cliente cl on (re.fk_cliente_id = cl.id)<br>
+group by nomeficticio order by nomeficticio;<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyclientesentrega.png" alt="Número de horarios de entregas que cada clientes possui"><br>
+
+<h2>Número de horarios de entregas que cada clientes possui</h2>
+Codigo: select cl.nomeficticio, count(cl.nomeficticio) from recebe re<br>
+inner join cliente cl on (re.fk_cliente_id = cl.id)<br>
+group by nomeficticio order by nomeficticio;<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyclientesentrega.png" alt="Número de horarios de entregas que cada clientes possui"><br>
+
 #### 9.10	SUBCONSULTAS (Mínimo 3)<br>
 ### 10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES PARA APRESENTAÇAO FINAL (Mínimo 6 e Máximo 10)<br>
 
