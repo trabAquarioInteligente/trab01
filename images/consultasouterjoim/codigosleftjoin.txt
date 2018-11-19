@@ -1,0 +1,15 @@
+select fu.nome, au.placa from funcionario fu
+left join automovel au on (fu.idfuncionario = au.fk_funcionario_idfuncionario);
+
+select fu.nome, co.telefone from funcionario fu
+left join contato co on (fu.idfuncionario = fk_funcionario_idfuncionario)
+order by nome;
+
+select fu.nome, ad.fk_bandaporco_id from funcionario fu
+left join adiciona ad on (ad.fk_funcionario_idfuncionario = fu.idfuncionario)
+order by fu.nome;
+
+select fu.nome, pe.id as "id do pedido" from funcionario fu
+left join _pedido pe on (pe.fk_funcionario_idfuncionario = fu.idfuncionario)
+order by fu.nome, pe.id;
+
