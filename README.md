@@ -399,6 +399,12 @@ inner join horariorecebimento ho on (re.fk_horariorecebimento_id = ho.id)<br>
 group by fk_horariorecebimento_id, horarioinicio, horariofim;<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbynumerohorariocliente.png" alt="Número de clientes que cada horario de entrega é referente"><br>
 
+<h2>Número de horarios de entregas que cada clientes possui</h2>
+Codigo: select cl.nomeficticio, count(cl.nomeficticio) from recebe re<br>
+inner join cliente cl on (re.fk_cliente_id = cl.id)<br>
+group by nomeficticio order by nomeficticio;<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyclientesentrega.png" alt="Número de horarios de entregas que cada clientes possui"><br>
+
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
         a) Uma junção que envolva Self Join
