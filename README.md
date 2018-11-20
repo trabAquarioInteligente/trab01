@@ -405,36 +405,29 @@ inner join cliente cl on (re.fk_cliente_id = cl.id)<br>
 group by nomeficticio order by nomeficticio;<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyclientesentrega.png" alt="Número de horarios de entregas que cada clientes possui"><br>
 
-<h2>Número de horarios de entregas que cada clientes possui</h2>
-Codigo: select cl.nomeficticio, count(cl.nomeficticio) from recebe re<br>
-inner join cliente cl on (re.fk_cliente_id = cl.id)<br>
-group by nomeficticio order by nomeficticio;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyclientesentrega.png" alt="Número de horarios de entregas que cada clientes possui"><br>
-
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
-<h2>Número de horarios de entregas que cada clientes possui</h2>
-Codigo: select cl.nomeficticio, count(cl.nomeficticio) from recebe re<br>
-inner join cliente cl on (re.fk_cliente_id = cl.id)<br>
-group by nomeficticio order by nomeficticio;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyclientesentrega.png" alt="Número de horarios de entregas que cada clientes possui"><br>
+<h2>Funcionarios e automoveis que estão relacionados</h2>
+Codigo: select fu.nome, au.placa from funcionario fu <br>
+left join automovel au on (fu.idfuncionario = au.fk_funcionario_idfuncionario);<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/consultasouterjoim/lefjoinclienteautomovel.png" alt="Funcionarios e automoveis que estão relacionados"><br>
 
-<h2>Número de horarios de entregas que cada clientes possui</h2>
-Codigo: select cl.nomeficticio, count(cl.nomeficticio) from recebe re<br>
-inner join cliente cl on (re.fk_cliente_id = cl.id)<br>
-group by nomeficticio order by nomeficticio;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyclientesentrega.png" alt="Número de horarios de entregas que cada clientes possui"><br>
+<h2>Telefone que cada funcionario está relacionado</h2>
+Codigo: select fu.nome, co.telefone from funcionario fu<br>
+left join contato co on (fu.idfuncionario = fk_funcionario_idfuncionario)<br>
+order by nome;<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/consultasouterjoim/lefjoinclientecontato.png" alt="Telefone que cada funcionario está relacionado"><br>
 
-<h2>Número de horarios de entregas que cada clientes possui</h2>
-Codigo: select cl.nomeficticio, count(cl.nomeficticio) from recebe re<br>
-inner join cliente cl on (re.fk_cliente_id = cl.id)<br>
-group by nomeficticio order by nomeficticio;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyclientesentrega.png" alt="Número de horarios de entregas que cada clientes possui"><br>
+<h2>funcionario e a banda de porco adicionada</h2>
+Codigo: select fu.nome, ad.fk_bandaporco_id from funcionario fu<br>
+left join adiciona ad on (ad.fk_funcionario_idfuncionario = fu.idfuncionario)<br>
+order by fu.nome;<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/consultasouterjoim/leftjoinclienteentrega.png" alt="funcionario e a banda de porco adicionada"><br>
 
-<h2>Número de horarios de entregas que cada clientes possui</h2>
-Codigo: select cl.nomeficticio, count(cl.nomeficticio) from recebe re<br>
-inner join cliente cl on (re.fk_cliente_id = cl.id)<br>
-group by nomeficticio order by nomeficticio;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyclientesentrega.png" alt="Número de horarios de entregas que cada clientes possui"><br>
+<h2>Qual pedido cada funcionario adicionou</h2>
+Codigo: select fu.nome, pe.id as "id do pedido" from funcionario fu<br>
+left join _pedido pe on (pe.fk_funcionario_idfuncionario = fu.idfuncionario)<br>
+order by fu.nome, pe.id;<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/consultasouterjoim/leftjoinfuncionariopedido.png" alt="Qual pedido cada funcionario adicionou"><br>
 
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
         a) Uma junção que envolva Self Join
