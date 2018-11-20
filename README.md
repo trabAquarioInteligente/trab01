@@ -432,41 +432,30 @@ order by fu.nome, pe.id;<br>
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
         a) Uma junção que envolva Self Join
         b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
-<h2>Número de horarios de entregas que cada clientes possui</h2>
-Codigo: select cl.nomeficticio, count(cl.nomeficticio) from recebe re<br>
-inner join cliente cl on (re.fk_cliente_id = cl.id)<br>
-group by nomeficticio order by nomeficticio;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyclientesentrega.png" alt="Número de horarios de entregas que cada clientes possui"><br>
+<h2>Endereço completo sem as chaves estrangeiras</h2>
+Codigo: create view endereco_sem_estrangeira as (select en.id, en.nome, en.numero, en.complemento, lo.descricao as "Logradouro",<br> 
+ba.nome as "Bairro", ci.nome as "cidade" from endereco en<br>
+inner join logradouro lo on (en.fk_logradouro_id = lo.id)<br>
+inner join compoe co on (co.fk_endereco_id = en.id)<br>
+inner join bairro ba on (ba.id = co.fk_bairro_id)<br>
+inner join cidade ci on (ci.id = ba.fk_cidade_id));<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Views/viewendereco.png" alt="Endereço completo sem as chaves estrangeiras"><br>
 
-<h2>Número de horarios de entregas que cada clientes possui</h2>
-Codigo: select cl.nomeficticio, count(cl.nomeficticio) from recebe re<br>
-inner join cliente cl on (re.fk_cliente_id = cl.id)<br>
-group by nomeficticio order by nomeficticio;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyclientesentrega.png" alt="Número de horarios de entregas que cada clientes possui"><br>
+<h2>Bandas de porco em estoque</h2>
+Codigo: create view banda_porco_estoque as (select * from bandaporco where quantidade > 0);<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Views/viewbandaporco.png" alt="Bandas de porco em estoque"><br>
 
-<h2>Número de horarios de entregas que cada clientes possui</h2>
-Codigo: select cl.nomeficticio, count(cl.nomeficticio) from recebe re<br>
-inner join cliente cl on (re.fk_cliente_id = cl.id)<br>
-group by nomeficticio order by nomeficticio;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyclientesentrega.png" alt="Número de horarios de entregas que cada clientes possui"><br>
+<h2>Número de bandas que cada cliente ira receber</h2>
+Codigo: create view pedido_agendado as (select pe.dataentrega, pe.numerobandas, cl.nomeficticio from _pedido pe<br>
+inner join cliente cl on (pe.fk_cliente_id = cl.id)<br>
+where (dataentrega - current_date) > 0);<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Views/viewclientepedido.png" alt="Número de bandas que cada cliente ira receber"><br>
 
-<h2>Número de horarios de entregas que cada clientes possui</h2>
-Codigo: select cl.nomeficticio, count(cl.nomeficticio) from recebe re<br>
-inner join cliente cl on (re.fk_cliente_id = cl.id)<br>
-group by nomeficticio order by nomeficticio;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyclientesentrega.png" alt="Número de horarios de entregas que cada clientes possui"><br>
-
-<h2>Número de horarios de entregas que cada clientes possui</h2>
-Codigo: select cl.nomeficticio, count(cl.nomeficticio) from recebe re<br>
-inner join cliente cl on (re.fk_cliente_id = cl.id)<br>
-group by nomeficticio order by nomeficticio;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyclientesentrega.png" alt="Número de horarios de entregas que cada clientes possui"><br>
-
-<h2>Número de horarios de entregas que cada clientes possui</h2>
-Codigo: select cl.nomeficticio, count(cl.nomeficticio) from recebe re<br>
-inner join cliente cl on (re.fk_cliente_id = cl.id)<br>
-group by nomeficticio order by nomeficticio;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyclientesentrega.png" alt="Número de horarios de entregas que cada clientes possui"><br>
+<h2>Qual cidade cada motorista atende</h2>
+Codigo: create view caminhoneiro_municipio as (select fu.nome, au.placa, ci.nome as "Cidade" from funcionario fu<br>
+inner join automovel au on (au.fk_funcionario_idfuncionario = fu.idfuncionario)<br>
+inner join cidade ci on (au.fk_cidade_id = ci.id));<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Views/view_funcionario_cidade.png" alt="Qual cidade cada motorista atende"><br>
 
 #### 9.10	SUBCONSULTAS (Mínimo 3)<br>
 ### 10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES PARA APRESENTAÇAO FINAL (Mínimo 6 e Máximo 10)<br>
