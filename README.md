@@ -61,7 +61,7 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
         * O protótipo deve possui no mínimo duas relações N para N
         * o mínimo de entidades do modelo conceitual será igual a 5
         
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConceitualVer%C3%A7%C3%A3ofinal.png" alt="Modelo Conceitual" ><br>
+<img src="https://raw.githubusercontent.com/trabAquarioInteligente/trab01/master/images/modeloConceitualATT22.png" alt="Modelo Conceitual" ><br>
 
     
     B) NOTACAO UML (Caso esteja fazendo a disciplina de analise)
@@ -174,9 +174,9 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
 
 
 ### 6	MODELO LÓGICO<br>
-![Alt text](https://github.com/trabAquarioInteligente/trab01/blob/master/images/L%C3%B3gico_1ver%C3%A7%C3%A3ofinal.png)
+![Alt text](https://github.com/trabAquarioInteligente/trab01/blob/master/images/L%C3%B3gicoATT.png)
         
-[Modelo Lógico](https://github.com/trabAquarioInteligente/trab01/blob/master/images/L%C3%B3gico_1.png)<br>
+[Modelo Lógico](https://raw.githubusercontent.com/trabAquarioInteligente/trab01/master/images/L%C3%B3gicoATT.png)<br>
 
 ### 7	MODELO FÍSICO<br>
 [Modelo Físico](https://github.com/trabAquarioInteligente/trab01/blob/master/ScriptsSQL/modeloFisico2.sql)<br>         
