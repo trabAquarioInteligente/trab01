@@ -41,11 +41,12 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
     b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
     O sistema precisará informar a quantidade de bandas que serão alocadas para cada caminhão e dizer ao motorista as entregas do dia e a melho rota para as mesmas.
  
-*Relatório de entregas em período de tempo.
-*Relatório de endereço das empresas por município.
-*Relatório de funcionários que efetuaram mais vendas.
-*Relatório de número de clientes que o automóvel atende.
-*Número de caminhões que são refrigerados e que não são refrigerados.
+*Relatório de entregas em período de tempo.<br>
+*Relatório de endereço das empresas por município.<br>
+*Relatório de funcionários que efetuaram mais vendas.<br>
+*Relatório de número de clientes que o automóvel atende.<br>
+*Número de caminhões que são refrigerados e que não são refrigerados.<br>
+
   
 #### 4.2 TABELA DE DADOS DO SISTEMA:
 
