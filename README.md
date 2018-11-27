@@ -329,6 +329,26 @@ alt="Filtrar funcionario por ID"><br>
     
     b) Criar no mínimo 3 consultas com operadores aritméticos 
     c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
+    
+## Consulta pedidos que seram entregues<br>
+Codigo: select pe.*, (current_date - dataentrega) as "Dias restantes" from _pedido pe where (current_date - dataentrega) > -1;<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultasRenomear/diasrestantes.png" 
+alt="Consulta pedidos que seram entregues"><br>
+<br>
+
+## Consulta Motoristas<br>
+Codigo: select fu.nome as "Motorista", au.placa, au.modelo from funcionario fu<br>
+inner join automovel  au on (fu.idfuncionario = au.fk_funcionario_idfuncionario);<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultasRenomear/motoristas.png" 
+alt="Consulta Motoristas"><br>
+<br>
+
+## Consulta Vendedores<br>
+Codigo: select fu.nome as "Vendedores", co.telefone from funcionario fu
+inner join contato co on (co.fk_funcionario_idfuncionario = fu.idfuncionario);<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultasRenomear/vendedores.png" 
+alt="Consulta Vendedores"><br>
+<br>
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
     a) Criar outras 5 consultas que envolvam like ou ilike
     b) Criar uma consulta para cada tipo de função data apresentada.
