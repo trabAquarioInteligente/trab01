@@ -464,7 +464,7 @@ Codigo: create view banda_porco_vendidas as (select * from bandaporco where quan
 Codigo: create view cliente_horarios as (select cl.nomeficticio, cl.id, cl.cnpj, ho.horarioinicio, ho.horariofim from cliente cl<br>
 inner join recebe re on (cl.id = re.fk_cliente_id)<br>
 inner join horariorecebimento ho on (ho.id = re.fk_horariorecebimento_id));<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Views/bandaporcovendida.png" alt="Bandas de porco vendidas"><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Views/clientehorario.png" alt="clientes e os horarios que cada um recebe"><br>
 
 #### 9.10	SUBCONSULTAS (Mínimo 3)<br>
 ### 10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES PARA APRESENTAÇAO FINAL (Mínimo 6 e Máximo 10)<br>
