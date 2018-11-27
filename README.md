@@ -328,6 +328,24 @@ alt="Filtrar funcionario por ID"><br>
 <br>
     
     b) Criar no mínimo 3 consultas com operadores aritméticos 
+    
+## Consulta horarios com Intervalo de tempo<br>
+Codigo: select ho.*, (horariofim - horarioinicio) as "Intervalor de tempo" from horariorecebimento ho;<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaOperadores2/intervalotempo.png" 
+alt="Consulta horarios com Intervalo de tempo"><br>
+<br>
+
+## Número de bandas que serão ou foram entregues<br>
+Codigo: select sum(numerobandas) from _pedido;<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaOperadores2/bandaporcoentrega.png" 
+alt="Número de bandas que serão ou foram entregues"><br>
+<br>
+
+## Número de bandas de porco em estoque<br>
+Codigo: select sum(quantidade) from bandaporco;<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaOperadores2/bandaporcoestoque.png" 
+alt="Número de bandas de porco em estoque"><br>
+<br>
     c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
     
 ## Consulta pedidos que seram entregues<br>
