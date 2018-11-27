@@ -220,7 +220,7 @@ Codigo: select * from cidade; <br>
 
 ## Consulta Tabela Contato<br>
 Codigo: select * from contato; <br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/contato.png" alt="Consulta tabela Contatos" ><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/SelectSQL/selectcontato.png" alt="Consulta tabela Contatos" ><br>
 <br>
 
 ## Consulta Tabela Endereco<br>
