@@ -276,7 +276,7 @@ alt="Consulta Automovel"><br>
 <br>
 ## Consulta Bairro<br>
 Codigo:select * from bairro where nome = 'Serra Dourada';
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/WhereSql/Bairro.jpg?raw=true" alt="Consulta Bairro"><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/WhereSql/whereserra.png" alt="Consulta Bairro"><br>
 <br>
 
 <br>
@@ -288,10 +288,10 @@ alt="Consultar BandaPorco em estoque"><br>
 <br>
 
 <br>
-## Consultar Logradouro<br>
-Codigo: select * from funcionario where funcao = 'Motorista';
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/WhereSql/Logradouro.png?raw=true" 
-alt="Consulta Logradouro"><br>
+## Filtrar funcionario por CPF<br>
+Codigo: select * from funcionario where cpf = '12415612312';<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/WhereSql/wherefuncionariocpf.png" 
+alt="Filtrar funcionario por CPF"><br>
 <br>
 
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
