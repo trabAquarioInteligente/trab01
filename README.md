@@ -468,6 +468,12 @@ inner join horariorecebimento ho on (ho.id = re.fk_horariorecebimento_id));<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Views/clientehorario.png" alt="clientes e os horarios que cada um recebe"><br>
 
 #### 9.10	SUBCONSULTAS (Mínimo 3)<br>
+<h2>Bandas de porco em estoque que cada funcionario adicionou</h2>
+Codigo: select fu.nome, fu.cpf, fu.idfuncionario, ba.dataabate, ba.quantidade, ba.id from funcionario fu<br>
+inner join adiciona ad on (ad.fk_funcionario_idfuncionario = fu.idfuncionario)<br>
+inner join (select * from bandaporco where quantidade > 0) ba on (ba.id = ad.fk_bandaporco_id);<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/subconsultas/bandafuncionarioadicionou.png" alt="Bandas de porco em estoque que cada funcionario adicionou"><br>
+
 ### 10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES PARA APRESENTAÇAO FINAL (Mínimo 6 e Máximo 10)<br>
 
 ### 11 Backup completo do banco de dados postgres 
