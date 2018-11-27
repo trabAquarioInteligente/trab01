@@ -456,6 +456,16 @@ inner join automovel au on (au.fk_funcionario_idfuncionario = fu.idfuncionario)<
 inner join cidade ci on (au.fk_cidade_id = ci.id));<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Views/view_funcionario_cidade.png" alt="Qual cidade cada motorista atende"><br>
 
+<h2>Bandas de porco vendidas</h2>
+Codigo: create view banda_porco_vendidas as (select * from bandaporco where quantidade = 0);<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Views/bandaporcovendida.png" alt="Bandas de porco vendidas"><br>
+
+<h2>clientes e os horarios que cada um recebe.</h2>
+Codigo: create view cliente_horarios as (select cl.nomeficticio, cl.id, cl.cnpj, ho.horarioinicio, ho.horariofim from cliente cl<br>
+inner join recebe re on (cl.id = re.fk_cliente_id)<br>
+inner join horariorecebimento ho on (ho.id = re.fk_horariorecebimento_id));<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Views/bandaporcovendida.png" alt="Bandas de porco vendidas"><br>
+
 #### 9.10	SUBCONSULTAS (Mínimo 3)<br>
 ### 10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES PARA APRESENTAÇAO FINAL (Mínimo 6 e Máximo 10)<br>
 
