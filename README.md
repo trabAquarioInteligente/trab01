@@ -297,21 +297,34 @@ alt="Filtrar funcionario por CPF"><br>
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
 <br>
-## Consultar Endereços em vila velha ou vitoria<br>
-Codigo: select * from endereco where codcidade = 1 or codcidade = 2;
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultasoperadores/enderecosemvilavelhaouvitoria.png" alt="Endereços em vila velha ou vitoria"><br>
+## Filtrar banda de porco por data<br>
+Codigo: select * from bandaporco where dataabate > '2018-09-1' and dataabate < '2018-11-10';<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaOperadores/filtrarbandaporco.png" 
+alt="filtrar banda de porco por data"><br>
 <br>
 
-<br>
-##Consultar Endereços nos bairros Jabaete e Manguinhos<br>
-Codigo: select * from funcionario where funcao = 'Motorista';
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultasoperadores/enderecosnosbairrosjabaeteemanguinhos.png" alt="Endereços nos bairros Jabaete e Manguinhos"><br>
+## Filtrar automovel pelo peso<br>
+Codigo: select * from automovel where carga_maxima > 150 and carga_maxima < 400;<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaOperadores/filtroautomovel.png" 
+alt="Filtrar automovel pelo peso"><br>
 <br>
 
+## Filtrar pedido por quantidade solicitada<br>
+Codigo: select * from _pedido where numerobandas > 20 and numerobandas < 50;<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaOperadores/filtrarpedidoqtd.png" 
+alt="Filtrar pedido por quantidade solicitada"><br>
 <br>
-## Consultar Pedidos com Quantidade Maior que 40 e menor que 200<br>
-Codigo: select * from funcionario where funcao = 'Motorista';
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultasoperadores/pedidoscomquantidademaiorque40emenorque200.png" alt="Pedidos com Quantidade Maior que 40 e menor que 200"><br>
+
+## Filtrar horario de recebimento por periodo de tempo<br>
+Codigo: select * from horariorecebimento where horarioinicio >= '07:00:00' and horariofim <= '12:00:00';<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaOperadores/filtrarhorariorecebimento.png" 
+alt="Filtrar horario de recebimento por periodo de tempo"><br>
+<br>
+
+## Filtrar funcionario por ID<br>
+Codigo: select * from funcionario where idfuncionario = 1 or idfuncionario = 3;<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaOperadores/filtrarfuncionario.png" 
+alt="Filtrar funcionario por ID"><br>
 <br>
     
     b) Criar no mínimo 3 consultas com operadores aritméticos 
