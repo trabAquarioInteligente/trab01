@@ -481,7 +481,14 @@ order by fu.nome, pe.id;<br>
 
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
         a) Uma junção que envolva Self Join
-        <h2>Não foi possivel realizar Self Join no sistema</h2>
+
+<h2>Número de bandas que foram entregues e que serão entregues</h2>
+Codigo: select sum(pe1.numerobandas) as "Número de bandas que serão entregues",<br>
+(sum(pe2.numerobandas) - sum(pe1.numerobandas)) as "número de bandas que foram entregues"<br> 
+from (select * from _pedido where (current_date - dataentrega) > -1) pe1 <br>
+right outer join _pedido pe2 on ((pe1.id = pe2.id));<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/selfjoin.png" alt="Número de bandas que foram entregues e que serão entregues"><br>
+
         b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
 <h2>Endereço completo sem as chaves estrangeiras</h2>
 Codigo: create view endereco_sem_estrangeira as (select en.id, en.nome, en.numero, en.complemento, lo.descricao as "Logradouro",<br> 
