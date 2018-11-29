@@ -178,7 +178,7 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
 [Modelo Lógico](https://raw.githubusercontent.com/trabAquarioInteligente/trab01/master/images/L%C3%B3gicoATT.png)<br>
 
 ### 7	MODELO FÍSICO<br>
-[Modelo Físico](https://github.com/trabAquarioInteligente/trab01/blob/master/ScriptsSQL/modeloFisico2.sql)<br>         
+[Modelo Físico](https://github.com/trabAquarioInteligente/trab01/blob/master/ScriptsSQL/codigos%20Definitivos/modeloFisico.sql)<br>         
         
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
