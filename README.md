@@ -420,7 +420,8 @@ VALUES (6, 6), (7, 7), (8, 8);
 #### 9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Mínimo 6)<br>
         a) Uma junção que envolva todas as tabelas possuindo no mínimo 3 registros no resultado
 <br>
-select f.nome as "nome do funcionario", co.telefone "Telefone", bp.dataabate,<br>
+<h2>Join com todas as tabelas</h2>
+Codigo: select f.nome as "nome do funcionario", co.telefone "Telefone", bp.dataabate,<br>
 bp.quantidade as "quantidade em estoque", pe.dataentrega as "Data da entrega", pe.numerobandas as "Numero de bandas",<br>
 cl.nomeficticio as "Nome Ficticio", concat(ho.horarioinicio, ' até as ', ho.horariofim) as "Horario de recebimento",<br>
 concat (lo.descricao,' ', en.nome, ', ', en.numero, ' ', ba.nome, ' - ', ci.nome, 'Complemento ', en.complemento) as "Endereço",<br>
@@ -442,6 +443,8 @@ inner join cidade ci on (ci.id = ba.fk_cidade_id)<br>
 inner join automovel au on (au.fk_cidade_id = ci.id)<br>
 inner join entrega ent on (ent.fk_automovel_id = au.id)<br>
 inner join funcionario fun on (fun.idfuncionario = au.fk_funcionario_idfuncionario);<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/megajoin.png" alt="Join com todas as verdade"><br>
+<br>
 
         b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
 <br>
