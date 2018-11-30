@@ -414,6 +414,8 @@ VALUES ('8:00:00', '10:00:00'), ('7:00:00', '9:00:00'), ('13:00:00', '15:00:00')
 INSERT INTO recebe (fk_HorarioRecebimento_ID ,fk_Cliente_ID)
 VALUES (6, 6), (7, 7), (8, 8);
 
+## Codigos Atualizados
+[Script atualizado](https://github.com/trabAquarioInteligente/trab01/blob/master/ScriptsSQL/codigos%20Definitivos/Codigoscomalter.sql)<br>
 
 >## Marco de Entrega 04 em: (18/10/2017)<br>
 
