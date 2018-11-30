@@ -408,7 +408,11 @@ values('Jabaeté'),('Soteco'),('Itaparica');
 insert into compoe(fk_endereco_id,fk_bairro_id)
 values(6,7),(7,8),(8,6);
 
+INSERT INTO HorarioRecebimento (horarioInicio, horarioFim)
+VALUES ('8:00:00', '10:00:00'), ('7:00:00', '9:00:00'), ('13:00:00', '15:00:00');
 
+INSERT INTO recebe (fk_HorarioRecebimento_ID ,fk_Cliente_ID)
+VALUES (6, 6), (7, 7), (8, 8);
 
 
 >## Marco de Entrega 04 em: (18/10/2017)<br>
