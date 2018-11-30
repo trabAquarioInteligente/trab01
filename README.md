@@ -371,7 +371,6 @@ alt="Consulta Vendedores"><br>
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
 
 ## Update da tabela Cliente
-
 update cliente set nomeficticio = 'Perim'
 where nomeficticio = 'Ronaldo Pereira';
 
@@ -389,12 +388,14 @@ where nomeficticio = 'Edmundo Souza';
 
 update cliente set nomeficticio = 'Carone'
 where nomeficticio = 'Mauricio Neto';
-select * from cliente;
 
 insert into cliente(nomeficticio,cnpj)
 values('Ok','66666666666'),('Oba','77777777777'),('Epa','88888888888');
 
-## Correções em outras tabelas
+select * from cliente;
+
+## Inserts para relacionar as informações recém adicionadas das tabelas
+
 insert into endereco(nome,numero,complemento,fk_cliente_id,fk_logradouro_id)
 values('Maximilio da Penha',406,null,8,1),('Rozendo Serapião',213,'Edificio Marlim apt.302',6,2),('Libano',666,null,7,2);
 
