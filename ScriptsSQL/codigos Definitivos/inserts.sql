@@ -106,7 +106,17 @@ VALUES ('Rua'),
 ('Avenida'),
 ('Beco'),
 ('Escadaria'),
-('Viela');
+('Viela'),
+('Acesso'),
+('Corrego'),
+('Passarela'),
+('Retorno'),
+('Rodovia'),
+('Via'),
+('Viaduto'),
+('Via Expressa'),
+('Trecho'),
+('Trevo');
 
 INSERT INTO Endereco(nome,numero,complemento, fk_Cliente_ID, fk_Logradouro_ID)
 VALUES('Maruipe',774,'perto do horto', 1, 2),
