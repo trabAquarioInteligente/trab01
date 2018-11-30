@@ -415,6 +415,30 @@ values(6,7),(7,8),(8,6);
 
 #### 9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Mínimo 6)<br>
         a) Uma junção que envolva todas as tabelas possuindo no mínimo 3 registros no resultado
+<br>
+select f.nome as "nome do funcionario", co.telefone "Telefone", bp.dataabate,<br>
+bp.quantidade as "quantidade em estoque", pe.dataentrega as "Data da entrega", pe.numerobandas as "Numero de bandas",<br>
+cl.nomeficticio as "Nome Ficticio", concat(ho.horarioinicio, ' até as ', ho.horariofim) as "Horario de recebimento",<br>
+concat (lo.descricao,' ', en.nome, ', ', en.numero, ' ', ba.nome, ' - ', ci.nome, 'Complemento ', en.complemento) as "Endereço",<br>
+au.placa, fun.nome as "Nome do caminhõneiro"<br>
+from funcionario F <br>
+inner join contato co on (co.fk_Funcionario_Idfuncionario = f.idfuncionario)<br>
+inner join adiciona ad on (ad.fk_Funcionario_IDfuncionario = F.IDfuncionario)<br>
+inner join Bandaporco bp on (bp.id = ad.fk_BandaPorco_ID)<br>
+inner join da_baixa dba on (dba.fk_BandaPorco_ID = bp.id)<br>
+inner join _pedido Pe on (pe.ID = dba.fk__Pedido_ID)<br>
+inner join cliente cl on (cl.id = pe.fk_Cliente_ID)<br>
+inner join recebe re on (cl.id = re.fk_cliente_ID)<br>
+inner join horariorecebimento ho on (ho.id = fk_horariorecebimento_id)<br>
+inner join endereco en on (en.fk_Cliente_id = cl.id)<br>
+inner join logradouro lo on (lo.id = en.fk_logradouro_id)<br>
+inner join compoe com on (com.fk_endereco_id = en.id)<br>
+inner join bairro ba on (ba.id = com.fk_bairro_id)<br>
+inner join cidade ci on (ci.id = ba.fk_cidade_id)<br>
+inner join automovel au on (au.fk_cidade_id = ci.id)<br>
+inner join entrega ent on (ent.fk_automovel_id = au.id)<br>
+inner join funcionario fun on (fun.idfuncionario = au.fk_funcionario_idfuncionario);<br>
+
         b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
 <br>
 <h2>Quais placas de caminhões cada funcionario está relacionado</h2>
