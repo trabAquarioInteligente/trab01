@@ -393,7 +393,7 @@ insert into cliente(nomeficticio,cnpj)
 values('Ok','66666666666'),('Oba','77777777777'),('Epa','88888888888');
 
 select * from cliente;
-
+       <img src = "https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Cliente.png"alt = "Tabela cliente com updates"><br>
 ## Inserts para relacionar as informações recém adicionadas das tabelas
 
 insert into endereco(nome,numero,complemento,fk_cliente_id,fk_logradouro_id)
