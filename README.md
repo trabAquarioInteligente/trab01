@@ -237,7 +237,7 @@ Codigo: select * from horariorecebimento; <br>
 
 ## Consulta Tabela Logradouro<br>
 Codigo: select * from logradouro; <br>
-<img src="https://raw.githubusercontent.com/trabAquarioInteligente/trab01/master/images/SelectSQL/SelectLogradouro.png" alt="" ><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/SelectSQL/logradouro.png" alt="Consulta Tabela Logradouro" ><br>
 <br>
 
 ## Consulta Tabela Pedido<br>
