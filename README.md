@@ -68,8 +68,8 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
         Garantir que a semântica dos atributos seja clara no esquema
         Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
         e tuplas falsas
-    
         
+<img src="https://raw.githubusercontent.com/trabAquarioInteligente/trab01/master/images/Class%20Diagram0.png" alt="Diagrama de Classe" ><br>
     
 #### 5.1 Validação do Modelo Conceitual
     [Smart Car]: [Harrison Sanches]
