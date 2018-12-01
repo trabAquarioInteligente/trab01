@@ -365,11 +365,15 @@ VALUES('Maruipe',774,'perto do horto', 1, 2),
 ('Paulina Maria de Souza',71,'perto da bomba da cesan', 2, 4),
 ('Mario Lopes',25,'ao lado do shopping', 3, 1),
 ('Vitoria',33,'perto da sedu', 4, 1),
-('Fernando Ferrari',54,'em frente à UFES', 5, 2);
+('Fernando Ferrari',54,'em frente à UFES', 5, 2),
+('do Gordo',99, 'proximo a padaria do joão', 6, 1),
+('Mamão', 78, 'Proximo a distribuidora de queijo', 7, 1);
 
 INSERT INTO Compoe(fk_Endereco_ID, fk_Bairro_ID)
 VALUES(1, 4),
 (2, 5),
 (3, 2),
 (4, 1),
-(5, 3);
+(5, 3),
+(6, 6),
+(7, 7);
