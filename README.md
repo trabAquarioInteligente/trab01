@@ -434,14 +434,11 @@ values('Maximilio da Penha',406,null,8,1),('Rozendo Serapião',213,'Edificio Mar
 insert into bairro(nome)
 values('Jabaeté'),('Soteco'),('Itaparica');
 
-insert into compoe(fk_endereco_id,fk_bairro_id)
-values(6,7),(7,8),(8,6);
+insert into compoe(fk_endereco_id,fk_bairro_id) values(8,11),(9,12),(10,10);
 
-INSERT INTO HorarioRecebimento (horarioInicio, horarioFim)
-VALUES ('8:00:00', '10:00:00'), ('7:00:00', '9:00:00'), ('13:00:00', '15:00:00');
+INSERT INTO HorarioRecebimento (horarioInicio, horarioFim) VALUES ('8:00:00', '10:00:00'), ('7:00:00', '9:00:00'), ('13:00:00', '15:00:00');
 
-INSERT INTO recebe (fk_HorarioRecebimento_ID ,fk_Cliente_ID)
-VALUES (6, 6), (7, 7), (8, 8);
+INSERT INTO recebe (fk_HorarioRecebimento_ID ,fk_Cliente_ID) VALUES (6, 8), (7, 9), (8, 10);
 
 ## Codigos Atualizados
 [Script atualizado](https://github.com/trabAquarioInteligente/trab01/blob/master/ScriptsSQL/codigos%20Definitivos/Codigoscomalter.sql)<br>
