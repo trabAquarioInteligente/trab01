@@ -329,8 +329,8 @@ VALUES (1, 1),
 (1, 5),
 (4, 5),
 (4,7),
-(4,8),
-(5,8);
+(4,6),
+(5,6);
 
 INSERT INTO Bairro (nome, fk_Cidade_ID)
 VALUES ('Serra Dourada', 2),
@@ -340,7 +340,7 @@ VALUES ('Serra Dourada', 2),
 ('tabuazeiro', 1),
 ('Jardim Limoeiro',3),
 ('Central Carapina',4),
-('Jardim Camburi,5'),
+('Jardim Camburi',5),
 ('Maruipe',1);
 
 INSERT INTO Logradouro (descricao)
