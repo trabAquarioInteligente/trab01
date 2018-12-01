@@ -394,7 +394,41 @@ Código: SELECT * FROM bairro WHERE nome ILIKE '%MA%'; <br>
 <br>
     
     b) Criar uma consulta para cada tipo de função data apresentada.
-    
+
+## Consulta Tabela BandaPorco<br>
+Código: SELECT id AS lote, dataAbate data_abate, (CURRENT_DATE - dataAbate) AS qntd_dias_após_abate FROM bandaPorco; <br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/94dataAbateDias.jpg" alt="Consulta tabela bandaPorco" ><br>
+<br>
+
+## Consulta Tabela BandaPorco<br>
+Código: SELECT id AS lote, dataAbate AS data_abate, (age(CURRENT_DATE, dataAbate)) AS tempo_após_abate FROM bandaPorco; <br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/94dataAbateAnos.jpg" alt="Consulta tabela bandaPorco" ><br>
+<br>
+
+## Consulta Tabela BandaPorco<br>
+Código: SELECT id AS lote, dataAbate AS data_abate, DATE_PART('year',(age(CURRENT_DATE,dataAbate))) AS anos_após_abate FROM bandaPorco; <br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/94dataAbateDatePartAge.jpg" alt="Consulta tabela bandaPorco" ><br>
+<br>
+
+## Consulta Tabela BandaPorco<br>
+Código: SELECT id AS lote, dataAbate AS data_abate, EXTRACT('year' FROM dataAbate) AS ano_abate FROM bandaPorco; <br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/94dataAbateExtract.jpg" alt="Consulta tabela bandaPorco" ><br>
+<br>
+
+## Consulta Tabela BandaPorco<br>
+Código: SELECT id AS lote, dataAbate AS data_abate, DATE_PART('year' ,dataAbate) AS ano_abate FROM bandaPorco; <br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/94dataAbateDatePartN.jpg" alt="Consulta tabela bandaPorco" ><br>
+<br>
+
+## Consulta Tabela _pedido<br>
+Código: SELECT id AS lote, dataEntrega, (CURRENT_DATE - dataEntrega) AS qntd_dias_após_entrega FROM _pedido; <br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/94dataEntregaDias.jpg" alt="Consulta tabela _pedido" ><br>
+<br>
+
+## Consulta Tabela _pedido<br>
+Código: SELECT id AS lote, dataEntrega, (age(CURRENT_DATE, dataEntrega)) AS tempo_após_entrega FROM _pedido; <br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/94dataEntregaTempo.jpg" alt="Consulta tabela _pedido" ><br>
+<br>
     
 
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
@@ -434,11 +468,14 @@ values('Maximilio da Penha',406,null,8,1),('Rozendo Serapião',213,'Edificio Mar
 insert into bairro(nome)
 values('Jabaeté'),('Soteco'),('Itaparica');
 
-insert into compoe(fk_endereco_id,fk_bairro_id) values(8,11),(9,12),(10,10);
+insert into compoe(fk_endereco_id,fk_bairro_id)
+values(6,7),(7,8),(8,6);
 
-INSERT INTO HorarioRecebimento (horarioInicio, horarioFim) VALUES ('8:00:00', '10:00:00'), ('7:00:00', '9:00:00'), ('13:00:00', '15:00:00');
+INSERT INTO HorarioRecebimento (horarioInicio, horarioFim)
+VALUES ('8:00:00', '10:00:00'), ('7:00:00', '9:00:00'), ('13:00:00', '15:00:00');
 
-INSERT INTO recebe (fk_HorarioRecebimento_ID ,fk_Cliente_ID) VALUES (6, 8), (7, 9), (8, 10);
+INSERT INTO recebe (fk_HorarioRecebimento_ID ,fk_Cliente_ID)
+VALUES (6, 6), (7, 7), (8, 8);
 
 ## Codigos Atualizados
 [Script atualizado](https://github.com/trabAquarioInteligente/trab01/blob/master/ScriptsSQL/codigos%20Definitivos/Codigoscomalter.sql)<br>
