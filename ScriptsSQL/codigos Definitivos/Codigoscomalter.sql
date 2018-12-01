@@ -212,16 +212,22 @@ VALUES('Rafael','111','08:00:00','0000001'),
 ('Thiago','555','8:00:00','0000005'),
 ('Lusca', '12415612312','8:00:00','0000006'),
 ('Gabriel','12345678912', '6:00:00','0000007'),
-('Renata', '45678912345','6:00:00','0000008');
+('Renata', '45678912345','6:00:00','0000008'),
+('Andreas','777','4:00:00','0000009'),
+('Daniel','666','8:00:00','00000010')
+;
 
 INSERT INTO BandaPorco (dataAbate, quantidade)
 VALUES('2018/07/19', 0),
 ('2018/07/24', 0),
 ('2018/08/14', 0),
-('2018/09/04', 55),
-('2018/10/12', 60),
-('2018/11/09', 50),
-('2018/11/13', 75);
+('2018/09/04', 0),
+('2018/10/12', 0),
+('2018/11/09', 0),
+('2018/11/13', 75),
+('2018/11/22',200),
+('2018/12/05',100),
+('2018/12/12',80);
 
 INSERT INTO Adiciona (fk_Funcionario_IDfuncionario, fk_BandaPorco_ID)
 VALUES (6, 1),
@@ -230,28 +236,43 @@ VALUES (6, 1),
 (7, 4),
 (7, 5),
 (6, 6),
-(7, 7);
+(7, 7),
+(7,8),
+(6,9),
+(6,10);
 
 INSERT INTO contato (telefone, fk_Funcionario_IDfuncionario)
 VALUES ('998412345', 7),
 ('991230094', 7),
 ('998124059', 8),
 ('991982312', 7),
-('990451235', 6);
+('990451235', 6),
+('98867776', 9),
+('95544776',10),
+('97554123',9),
+('97485621',10),
+('98784154',9);
 
 INSERT INTO Cliente (nomeFicticio, cnpj)
 VALUES ('Ronaldo Pereira', '11111111111'),
 ('Edmundo Souza', '22222222222'),
 ('Mauricio Neto', '33333333333'),
 ('Nelson Cristo', '44444444444'),
-('Luis Pinto', '55555555555');
+('Luis Pinto', '55555555555'),
+('Mineirao','99999999999'),
+('Muffato','00000000001');
 
 INSERT INTO _Pedido (dataEntrega, numeroBandas, fk_Cliente_ID, fk_Funcionario_IDfuncionario)
 VALUES ('2018/11/29', 30, 1, 8),
 ('2018/11/28', 40, 2, 8),
 ('2018/11/24', 35, 3, 7),
 ('2018/11/30', 70, 4, 7),
-('2018/11/25', 15, 5, 7);
+('2018/11/25', 15, 5, 7),
+('2018/11/26',50,6,9),
+('2018/11/27',30,7,10),
+('2018/11/27',25,7,9),
+('2018/11/28',41,7,8),
+('2018/11/29',34,2,8);
 
 INSERT INTO Da_baixa(fk_BandaPorco_ID, fk__Pedido_ID)
 VALUES (1, 1),
@@ -261,7 +282,10 @@ VALUES (1, 1),
 (4, 2),
 (4, 3),
 (4, 4),
-(5, 4);
+(5, 4),
+(5,5),
+(5,6),
+(6,6);
 
 INSERT INTO Cidade(nome)
 VALUES ('Vitoria'),
@@ -282,7 +306,12 @@ VALUES (1,1),
 (2, 1),
 (3, 1),
 (4, 2),
-(5, 1);
+(5, 1),
+(1,3),
+(1,4),
+(2,5),
+(2,6),
+(3,7);
 
 INSERT INTO HorarioRecebimento (horarioInicio, horarioFim)
 VALUES ('8:00:00', '12:00:00'),
@@ -298,14 +327,21 @@ VALUES (1, 1),
 (4, 4),
 (5, 5),
 (1, 5),
-(4, 5);
+(4, 5),
+(4,7),
+(4,6),
+(2,6);
 
 INSERT INTO Bairro (nome, fk_Cidade_ID)
 VALUES ('Serra Dourada', 2),
 ('São Pedro', 1),
 ('Goiabeiras', 1),
 ('Manguinhos', 2),
-('tabuazeiro', 1);
+('tabuazeiro', 1),
+('Jardim Limoeiro',3),
+('Central Carapina',4),
+('Jardim Camburi',5),
+('Maruipe',1);
 
 INSERT INTO Logradouro (descricao)
 VALUES ('Rua'),
@@ -329,14 +365,18 @@ VALUES('Maruipe',774,'perto do horto', 1, 2),
 ('Paulina Maria de Souza',71,'perto da bomba da cesan', 2, 4),
 ('Mario Lopes',25,'ao lado do shopping', 3, 1),
 ('Vitoria',33,'perto da sedu', 4, 1),
-('Fernando Ferrari',54,'em frente à UFES', 5, 2);
+('Fernando Ferrari',54,'em frente à UFES', 5, 2),
+('do Gordo',99, 'proximo a padaria do joão', 6, 1),
+('Mamão', 78, 'Proximo a distribuidora de queijo', 7, 1);
 
 INSERT INTO Compoe(fk_Endereco_ID, fk_Bairro_ID)
 VALUES(1, 4),
 (2, 5),
 (3, 2),
 (4, 1),
-(5, 3);
+(5, 3),
+(6, 6),
+(7, 7);
 
 update cliente set nomeficticio = 'Perim' where nomeficticio = 'Ronaldo Pereira';
 
@@ -356,14 +396,8 @@ insert into endereco(nome,numero,complemento,fk_cliente_id,fk_logradouro_id) val
 
 insert into bairro(nome) values('Jabaeté'),('Soteco'),('Itaparica');
 
-insert into compoe(fk_endereco_id,fk_bairro_id) values(6,7),(7,8),(8,6);
+insert into compoe(fk_endereco_id,fk_bairro_id) values(8,11),(9,12),(10,10);
 
-INSERT INTO HorarioRecebimento (horarioInicio, horarioFim)
-VALUES ('8:00:00', '10:00:00'),
-('7:00:00', '9:00:00'),
-('13:00:00', '15:00:00');
+INSERT INTO HorarioRecebimento (horarioInicio, horarioFim) VALUES ('8:00:00', '10:00:00'), ('7:00:00', '9:00:00'), ('13:00:00', '15:00:00');
 
-INSERT INTO recebe (fk_HorarioRecebimento_ID ,fk_Cliente_ID)
-VALUES (6, 6),
-(7, 7),
-(8, 8);
+INSERT INTO recebe (fk_HorarioRecebimento_ID ,fk_Cliente_ID) VALUES (6, 8), (7, 9), (8, 10);
