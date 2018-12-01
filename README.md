@@ -201,13 +201,13 @@ Codigo: select * from automovel; <br>
 
 ## Consulta Tabela Bairro<br>
 Codigo: select * from bairro; <br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/bairro.png" alt="Consulta Tabela Bairro" ><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/selects%20Final/Bairro.png" alt="Consulta Tabela Bairro" ><br>
 <br>
 
 
 ## Consulta Tabela Banda de Porco<br>
 Codigo: select * from bandaporco; <br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/bandaporco.png" alt="Consulta tabela banda de porco" ><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/selects%20Final/BandaPorco.png" alt="Consulta tabela banda de porco" ><br>
 <br>
 
 ## Consulta Tabela Cidade<br>
@@ -217,17 +217,17 @@ Codigo: select * from cidade; <br>
 
 ## Consulta Tabela Contato<br>
 Codigo: select * from contato; <br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/SelectSQL/selectcontato.png" alt="Consulta tabela Contatos" ><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/selects%20Final/Contato.png" alt="Consulta tabela Contatos" ><br>
 <br>
 
 ## Consulta Tabela Endereco<br>
 Codigo: select * from endereco; <br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/endereco.png" alt="Consulta tabela Endereço" ><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/selects%20Final/Endereco.png" alt="Consulta tabela Endereço" ><br>
 <br>
 
 ## Consulta Tabela Funcionario<br>
 Codigo: select * from funcionario; <br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/funcionario.png" alt="Consulta tabela funcionario" ><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/selects%20Final/Funcionario.png" alt="Consulta tabela funcionario" ><br>
 <br>
 
 ## Consulta Tabela Horario Receber<br>
@@ -242,22 +242,22 @@ Codigo: select * from logradouro; <br>
 
 ## Consulta Tabela Pedido<br>
 Codigo: select * from _pedido; <br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/pedido.png" alt="Consulta Tabela Pedido" ><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/selects%20Final/Pedido.png" alt="Consulta Tabela Pedido" ><br>
 <br>
 
 ## Consulta Tabelas de Relacionamento
 <br>
 Codigo: select * from adiciona; <br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/Adiciona.png" alt="Consulta Tabela Adiciona" ><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/selects%20Final/Adiciona.png" alt="Consulta Tabela Adiciona" ><br>
 <br>
 Codigo: select * from Da_baixa; <br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/dabaixa.png" alt="Consulta Tabela Da_baixa" ><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/selects%20Final/Da_Baixa.png" alt="Consulta Tabela Da_baixa" ><br>
 <br>
 Codigo: select * from Entrega; <br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/Entrega.png" alt="Consulta Tabela Entrega" ><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/selects%20Final/Entrega.png" alt="Consulta Tabela Entrega" ><br>
 <br>
 Codigo: select * from recebe; <br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/recebe.png" alt="Consulta Tabela Pedido" ><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/selects%20Final/Recebe.png" alt="Consulta Tabela Pedido" ><br>
 <br>
 Codigo: select * from Compoe;<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/compoe.png" alt="Consulta Tabela Pedido" ><br>
