@@ -365,8 +365,37 @@ inner join contato co on (co.fk_funcionario_idfuncionario = fu.idfuncionario);<b
 alt="Consulta Vendedores"><br>
 <br>
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
+
     a) Criar outras 5 consultas que envolvam like ou ilike
+    
+## Consulta Tabela Funcionario<br>
+Código: SELECT * FROM funcionario WHERE nome LIKE 'M%'; <br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/9funcionarioLike.jpg" alt="Consulta tabela funcionario" ><br>
+<br>
+
+## Consulta Tabela Funcionario<br>
+Código: SELECT * FROM funcionario WHERE nome LIKE '%l'; <br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/9funcionarioLikeL.jpg" alt="Consulta tabela funcionario" ><br>
+<br>
+
+## Consulta Tabela Endereco<br>
+Código: SELECT * FROM endereco WHERE nome ILIKE '%mar%'; <br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/9enderecoIlike.jpg" alt="Consulta tabela endereco" ><br>
+<br>
+
+## Consulta Tabela Cidade<br>
+Código: SELECT * FROM cidade WHERE nome LIKE '_i%'; <br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/9cidadeLike.jpg" alt="Consulta tabela cidade" ><br>
+<br>
+
+## Consulta Tabela Bairro<br>
+Código: SELECT * FROM bairro WHERE nome ILIKE '%MA%'; <br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/9bairroIlike.jpg" alt="Consulta tabela bairro" ><br>
+<br>
+    
     b) Criar uma consulta para cada tipo de função data apresentada.
+    
+    
 
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
 
