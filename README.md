@@ -697,12 +697,12 @@ inner join (select * from bandaporco where quantidade > 0) ba on (ba.id = ad.fk_
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Tutorial/passo2.png" alt="passo2"><br>
 3 - Na aba que ira abrir em Format escolha Custom or tar
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Tutorial/passo3.png" alt="passo3"><br>
-4 - Em filename clique em ... para procurar o arquivo
+4 - Em filename clique em ... para procurar o arquivo<br>
 5 - Na pasta onde você salvou o backup procure pelo arquivo transportePereciveis.backup e selecione ele
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Tutorial/passo%205.png" alt="passo5"><br>
 6 - Em Rolename escolha "postgres"
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Tutorial/passo6.png" alt="passo6"><br>
-7 - depois vá em restaurar
+7 - depois vá em restaurar<br>
 8 - logo após ira aparecer essa tela, so clicar em done e testar o banco de dados. 
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Tutorial/passo8.png" alt="passo8"><br>
         
