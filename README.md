@@ -549,7 +549,7 @@ order by f.nome;<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/select%20join/funcionariofazpedido.png" alt="Qual Venda cada funcionario fez"><br>
 
 <h2>Qual venda está relacionada a qual cliente</h2>
-Codigo: select cl.nomeficticio, pe.dataentrega, pe.numerobandas from _pedido pe <br>
+Codigo: select cl.id, cl.nomeficticio, pe.dataentrega, pe.numerobandas from _pedido pe <br>
 inner join cliente cl on (pe.fk_cliente_id = cl.id) <br>
 order by cl.nomeficticio;<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/select%20join/vendaRelacionada.png" alt="Qual venda está relacionada a qual cliente"><br>
@@ -594,35 +594,36 @@ group by nomeficticio order by nomeficticio;<br>
 <h2>Funcionarios e automoveis que estão relacionados</h2>
 Codigo: select fu.nome, au.placa from funcionario fu <br>
 left join automovel au on (fu.idfuncionario = au.fk_funcionario_idfuncionario);<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/consultasouterjoim/lefjoinclienteautomovel.png" alt="Funcionarios e automoveis que estão relacionados"><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/outerjoin/funcionarioPlaca.png" alt="Funcionarios e automoveis que estão relacionados"><br>
 
 <h2>Telefone que cada funcionario está relacionado</h2>
 Codigo: select fu.nome, co.telefone from funcionario fu<br>
 left join contato co on (fu.idfuncionario = fk_funcionario_idfuncionario)<br>
 order by nome;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/consultasouterjoim/lefjoinclientecontato.png" alt="Telefone que cada funcionario está relacionado"><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/outerjoin/funcionarioTelefone.png" alt="Telefone que cada funcionario está relacionado"><br>
 
 <h2>funcionario e a banda de porco adicionada</h2>
 Codigo: select fu.nome, ad.fk_bandaporco_id from funcionario fu<br>
 left join adiciona ad on (ad.fk_funcionario_idfuncionario = fu.idfuncionario)<br>
 order by fu.nome;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/consultasouterjoim/leftjoinclienteentrega.png" alt="funcionario e a banda de porco adicionada"><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/outerjoin/funcionarioBandaPorco.png" alt="funcionario e a banda de porco adicionada"><br>
 
 <h2>Qual pedido cada funcionario adicionou</h2>
 Codigo: select fu.nome, pe.id as "id do pedido" from funcionario fu<br>
 left join _pedido pe on (pe.fk_funcionario_idfuncionario = fu.idfuncionario)<br>
 order by fu.nome, pe.id;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/consultasouterjoim/leftjoinfuncionariopedido.png" alt="Qual pedido cada funcionario adicionou"><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/outerjoin/funcionarioPedido.png" alt="Qual pedido cada funcionario adicionou"><br>
 
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
         a) Uma junção que envolva Self Join
 
 <h2>Número de bandas que foram entregues e que serão entregues</h2>
+Obs: Consulta Realizada no dia 27/09/2018
 Codigo: select sum(pe1.numerobandas) as "Número de bandas que serão entregues",<br>
 (sum(pe2.numerobandas) - sum(pe1.numerobandas)) as "número de bandas que foram entregues"<br> 
-from (select * from _pedido where (current_date - dataentrega) > -1) pe1 <br>
+from (select * from _pedido where (dataentrega - current_date) > -1) pe1 <br>
 right outer join _pedido pe2 on ((pe1.id = pe2.id));<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/selfjoin.png" alt="Número de bandas que foram entregues e que serão entregues"><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/selfJoin.png" alt="Número de bandas que foram entregues e que serão entregues"><br>
 
         b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
 <h2>Endereço completo sem as chaves estrangeiras</h2>
