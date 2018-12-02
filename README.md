@@ -41,12 +41,13 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
     b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
     O sistema precisará informar a quantidade de bandas que serão alocadas para cada caminhão e dizer ao motorista as entregas do dia e a melho rota para as mesmas.
  
-*Relatório de entregas em período de tempo.<br>
-*Relatório de endereço das empresas por município.<br>
-*Relatório de funcionários que efetuaram mais vendas.<br>
-*Relatório de número de clientes que o automóvel atende.<br>
-*Número de caminhões que são refrigerados e que não são refrigerados.<br>
+*Relatório de entregas em data.<br>
+*Relatório de empresas por município.<br>
+*Relatorio de vendas.<br>
+*Relatorio de frota.<br>
+*Relatorio de Compras.<br>
 
+[Relatorios](https://github.com/trabAquarioInteligente/trab01/blob/master/Relatorios%20JupyterNotebook/TransportePereciveis.ipynb)<br>
   
 #### 4.2 TABELA DE DADOS DO SISTEMA:
 
