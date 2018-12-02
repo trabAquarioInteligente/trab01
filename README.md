@@ -633,40 +633,41 @@ inner join logradouro lo on (en.fk_logradouro_id = lo.id)<br>
 inner join compoe co on (co.fk_endereco_id = en.id)<br>
 inner join bairro ba on (ba.id = co.fk_bairro_id)<br>
 inner join cidade ci on (ci.id = ba.fk_cidade_id));<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Views/viewendereco.png" alt="Endereço completo sem as chaves estrangeiras"><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Views/ViewEndereco.png" alt="Endereço completo sem as chaves estrangeiras"><br>
 
 <h2>Bandas de porco em estoque</h2>
 Codigo: create view banda_porco_estoque as (select * from bandaporco where quantidade > 0);<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Views/viewbandaporco.png" alt="Bandas de porco em estoque"><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Views/viewBanda.png" alt="Bandas de porco em estoque"><br>
 
 <h2>Número de bandas que cada cliente ira receber</h2>
+Obs: Consulta Realizada no dia 26/11/2018
 Codigo: create view pedido_agendado as (select pe.dataentrega, pe.numerobandas, cl.nomeficticio from _pedido pe<br>
 inner join cliente cl on (pe.fk_cliente_id = cl.id)<br>
 where (dataentrega - current_date) > 0);<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Views/viewclientepedido.png" alt="Número de bandas que cada cliente ira receber"><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Views/ViewClienteBanda.png" alt="Número de bandas que cada cliente ira receber"><br>
 
 <h2>Qual cidade cada motorista atende</h2>
 Codigo: create view caminhoneiro_municipio as (select fu.nome, au.placa, ci.nome as "Cidade" from funcionario fu<br>
 inner join automovel au on (au.fk_funcionario_idfuncionario = fu.idfuncionario)<br>
 inner join cidade ci on (au.fk_cidade_id = ci.id));<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Views/view_funcionario_cidade.png" alt="Qual cidade cada motorista atende"><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Views/ViewCidadeMotorista.png" alt="Qual cidade cada motorista atende"><br>
 
 <h2>Bandas de porco vendidas</h2>
 Codigo: create view banda_porco_vendidas as (select * from bandaporco where quantidade = 0);<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Views/bandaporcovendida.png" alt="Bandas de porco vendidas"><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Views/ViewBandasVendidas.png" alt="Bandas de porco vendidas"><br>
 
 <h2>clientes e os horarios que cada um recebe.</h2>
 Codigo: create view cliente_horarios as (select cl.nomeficticio, cl.id, cl.cnpj, ho.horarioinicio, ho.horariofim from cliente cl<br>
 inner join recebe re on (cl.id = re.fk_cliente_id)<br>
 inner join horariorecebimento ho on (ho.id = re.fk_horariorecebimento_id));<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Views/clientehorario.png" alt="clientes e os horarios que cada um recebe"><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Views/ViewClienteHorario.png" alt="clientes e os horarios que cada um recebe"><br>
 
 #### 9.10	SUBCONSULTAS (Mínimo 3)<br>
 <h2>Bandas de porco em estoque que cada funcionario adicionou</h2>
 Codigo: select fu.nome, fu.cpf, fu.idfuncionario, ba.dataabate, ba.quantidade, ba.id from funcionario fu<br>
 inner join adiciona ad on (ad.fk_funcionario_idfuncionario = fu.idfuncionario)<br>
 inner join (select * from bandaporco where quantidade > 0) ba on (ba.id = ad.fk_bandaporco_id);<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/subconsultas/bandafuncionarioadicionou.png" alt="Bandas de porco em estoque que cada funcionario adicionou"><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Views/SubBandaFuncionario.png" alt="Bandas de porco em estoque que cada funcionario adicionou"><br>
 
 ### 10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES PARA APRESENTAÇAO FINAL (Mínimo 6 e Máximo 10)<br>
 
