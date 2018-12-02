@@ -260,7 +260,7 @@ Codigo: select * from recebe; <br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/selects%20Final/Recebe.png" alt="Consulta Tabela Pedido" ><br>
 <br>
 Codigo: select * from Compoe;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaTabelas/Atualizadas/compoe.png" alt="Consulta Tabela Pedido" ><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/selects%20Final/compoe.png" alt="Consulta Tabela Pedido" ><br>
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 <br>
@@ -280,7 +280,7 @@ Codigo:select * from bairro where nome = 'Serra Dourada';
 ## Consultar BandaPorco<br>
 Consultando bandas de porco em estoque  <br>
 Codigo: select * from bandaporco where quantidade > 0; <br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultas%20Where/whereBandaporco.png" 
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/select%20where/bandaPorco.png" 
 alt="Consultar BandaPorco em estoque"><br>
 <br>
 
@@ -296,7 +296,7 @@ alt="Filtrar funcionario por CPF"><br>
 <br>
 ## Filtrar banda de porco por data<br>
 Codigo: select * from bandaporco where dataabate > '2018-09-1' and dataabate < '2018-11-10';<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaOperadores/filtrarbandaporco.png" 
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/select%20where/bandaporcofiltradata.png" 
 alt="filtrar banda de porco por data"><br>
 <br>
 
@@ -308,13 +308,13 @@ alt="Filtrar automovel pelo peso"><br>
 
 ## Filtrar pedido por quantidade solicitada<br>
 Codigo: select * from _pedido where numerobandas > 20 and numerobandas < 50;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaOperadores/filtrarpedidoqtd.png" 
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/select%20where/pedidoquantidade.png" 
 alt="Filtrar pedido por quantidade solicitada"><br>
 <br>
 
 ## Filtrar horario de recebimento por periodo de tempo<br>
 Codigo: select * from horariorecebimento where horarioinicio >= '07:00:00' and horariofim <= '12:00:00';<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaOperadores/filtrarhorariorecebimento.png" 
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/select%20where/horariorecebimentoperiodo.png" 
 alt="Filtrar horario de recebimento por periodo de tempo"><br>
 <br>
 
@@ -328,26 +328,27 @@ alt="Filtrar funcionario por ID"><br>
     
 ## Consulta horarios com Intervalo de tempo<br>
 Codigo: select ho.*, (horariofim - horarioinicio) as "Intervalor de tempo" from horariorecebimento ho;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaOperadores2/intervalotempo.png" 
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/select%20where/horariointervalotempo.png" 
 alt="Consulta horarios com Intervalo de tempo"><br>
 <br>
 
 ## Número de bandas que serão ou foram entregues<br>
 Codigo: select sum(numerobandas) from _pedido;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaOperadores2/bandaporcoentrega.png" 
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/select%20where/pedidoSUNbandas.png" 
 alt="Número de bandas que serão ou foram entregues"><br>
 <br>
 
 ## Número de bandas de porco em estoque<br>
 Codigo: select sum(quantidade) from bandaporco;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultaOperadores2/bandaporcoestoque.png" 
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/select%20where/bandaporcoSUNqtdd.png" 
 alt="Número de bandas de porco em estoque"><br>
 <br>
     c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
     
 ## Consulta pedidos que seram entregues<br>
-Codigo: select pe.*, (current_date - dataentrega) as "Dias restantes" from _pedido pe where (current_date - dataentrega) > -1;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultasRenomear/diasrestantes.png" 
+Obs: Consulta Feita no dia 25/09/2018<br>
+Codigo: select pe.*, (current_date - dataentrega) as "Dias restantes" from _pedido pe where (dataentrega - current_date) > -1;<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/select%20where/diasrestantesparaentrega.png" 
 alt="Consulta pedidos que seram entregues"><br>
 <br>
 
@@ -361,7 +362,7 @@ alt="Consulta Motoristas"><br>
 ## Consulta Vendedores<br>
 Codigo: select fu.nome as "Vendedores", co.telefone from funcionario fu
 inner join contato co on (co.fk_funcionario_idfuncionario = fu.idfuncionario);<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/ConsultasRenomear/vendedores.png" 
+<img src= "https://github.com/trabAquarioInteligente/trab01/blob/master/images/select%20where/vendedores.png" 
 alt="Consulta Vendedores"><br>
 <br>
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
