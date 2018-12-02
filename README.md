@@ -694,17 +694,17 @@ inner join (select * from bandaporco where quantidade > 0) ba on (ba.id = ad.fk_
 1 - Em um banco de dados sem nenhuma tabela clique com o botão direito.
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Tutorial/passo1.png" alt="passo1"><br>
 2 - Vá na opção Restore
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Tutoria2/passo2.png" alt="passo2"><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Tutorial/passo2.png" alt="passo2"><br>
 3 - Na aba que ira abrir em Format escolha Custom or tar
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Tutoria3/passo3.png" alt="passo3"><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Tutorial/passo3.png" alt="passo3"><br>
 4 - Em filename clique em ... para procurar o arquivo
 5 - Na pasta onde você salvou o backup procure pelo arquivo transportePereciveis.backup e selecione ele
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Tutorial/passo%205.png" alt="passo5"><br>
 6 - Em Rolename escolha "postgres"
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Tutoria3/passo6.png" alt="passo6"><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Tutorial/passo6.png" alt="passo6"><br>
 7 - depois vá em restaurar
 8 - logo após ira aparecer essa tela, so clicar em done e testar o banco de dados. 
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Tutoria3/passo8.png" alt="passo8"><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Tutorial/passo8.png" alt="passo8"><br>
         
 ### 13   DIFICULDADES ENCONTRADAS PELO GRUPO<br>
 >## Marco de Entrega Final em: (08/11/2018)<br>
