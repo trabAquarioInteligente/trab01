@@ -139,6 +139,7 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
     ID: Código utilizado como chave primária da tabela.
 
     Tabela “Contato“: Necessário para guardar número para contato com o cliente.
+    Fk_Funcionario_IDfuncionario: Campo utilizado para relacionar esta tabela com “FUNCIONARIO”.
     Telefone: Número utilizado como um meio de contato.
 
     Tabela “_Pedido“: Armazena informações pertinentes a cada pedido.
@@ -163,9 +164,6 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
     Tabela “Compoe“: Utilizada para facilitar a relação das tabelas "BAIRRO" e "ENDERECO".
     Fk_Endereco_ID: Campo utilizado para relacionar esta tabela com “ENDERECO”.
     Fk_Bairro_ID: Campo utilizado para relacionar esta tabela com “BAIRRO”.
-    
-    Tabela “Pertence“: Auxilia na utilização da tabela “FUNCIONARIO”.
-    Fk_Funcionario_IDfuncionario: Campo utilizado para relacionar esta tabela com “FUNCIONARIO”.
 
     Tabela “Adiciona“: Pertinente para relacionar e proporcionar que o funcionário aumente a quantidade do produto no estoque.
     Fk_Funcionario_IDfuncionario: Campo utilizado para relacionar esta tabela com “FUNCIONARIO”.
