@@ -508,9 +508,10 @@ inner join cidade ci on (ci.id = ba.fk_cidade_id)<br>
 inner join automovel au on (au.fk_cidade_id = ci.id)<br>
 inner join entrega ent on (ent.fk_automovel_id = au.id)<br>
 inner join funcionario fun on (fun.idfuncionario = au.fk_funcionario_idfuncionario);<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/megajoin.png" alt="Join com todas as verdade"><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/megajoin.png" alt="Join com todas as tabelas"><br>
 <br>
-[Consulta Completa](https://docs.google.com/spreadsheets/d/1ekNDyKrmX4MSIioy8lLzK3td3kyC-o12FQ4mashp7DE/edit?usp=sharing)<br>
+ <a href="https://docs.google.com/spreadsheets/d/1ekNDyKrmX4MSIioy8lLzK3td3kyC-o12FQ4mashp7DE/edit?usp=sharing">Consulta Completa</a>
+<br>
 
         b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
 <br>
@@ -707,6 +708,8 @@ inner join (select * from bandaporco where quantidade > 0) ba on (ba.id = ad.fk_
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Tutorial/passo8.png" alt="passo8"><br>
         
 ### 13   DIFICULDADES ENCONTRADAS PELO GRUPO<br>
+<h2>Andreas</h2>
+É mais dificuldade financeira, pois não tenho uma estrutura para fazer em casa, então acaba que precisei utilizar os computadores da faculdade para fazer o trabalho.<br>
 >## Marco de Entrega Final em: (08/11/2018)<br>
         
 ### 14  FORMATACAO NO GIT: https://help.github.com/articles/basic-writing-and-formatting-syntax/
