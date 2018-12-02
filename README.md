@@ -670,6 +670,18 @@ inner join adiciona ad on (ad.fk_funcionario_idfuncionario = fu.idfuncionario)<b
 inner join (select * from bandaporco where quantidade > 0) ba on (ba.id = ad.fk_bandaporco_id);<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Views/SubBandaFuncionario.png" alt="Bandas de porco em estoque que cada funcionario adicionou"><br>
 
+<h2>bandas de porco que o funcionario com o ID 9 vendeu</h2>
+select ba.dataabate, pe.dataentrega, pe.numerobandas, fk_funcionario_idfuncionario as "ID do funcionario" from bandaporco ba <br>
+inner join da_baixa da on (da.fk_bandaporco_id = ba.id)<br>
+inner join (select * from _pedido where fk_funcionario_idfuncionario = 9) pe on (da.fk__pedido_id = pe.id);<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/subconsultas/subconsulta9.png" alt="bandas de porco que o funcionario com o ID 9 vendeu"><br>
+
+<h2>Clientes que recebem antes de 12:00</h2>
+select cl.nomeficticio, ho.horarioinicio, ho.horariofim from cliente cl<br>
+inner join recebe re on (re.fk_cliente_id = cl.id)<br>
+inner join (select * from horariorecebimento where horariofim <= '12:00:00') ho on (ho.id = re.fk_horariorecebimento_id);<br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/subconsultas/clientesEntrega12.png" alt="Clientes que recebem antes de 12:00"><br>
+
 ### 10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES PARA APRESENTAÇAO FINAL (Mínimo 6 e Máximo 10)<br>
 
 ### 11 Backup completo do banco de dados postgres 
@@ -691,7 +703,7 @@ inner join (select * from bandaporco where quantidade > 0) ba on (ba.id = ad.fk_
         c) executar códigos que tenham sido construídos para o trabalho 
         d) realizar qualquer procedimento executado pelo grupo que desenvolveu o trabalho
         
-<h2>Tutorial Backup</h2>
+<h2>Tutorial Restaurando Backup</h2>
 1 - Em um banco de dados sem nenhuma tabela clique com o botão direito.
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Tutorial/passo1.png" alt="passo1"><br>
 2 - Vá na opção Restore
