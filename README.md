@@ -675,7 +675,7 @@ inner join (select * from bandaporco where quantidade > 0) ba on (ba.id = ad.fk_
     a) deve ser realizado no formato "backup" 
         (Em Dump Options #1 Habilitar opções Don't Save Owner e Privilege)
     b) antes de postar o arquivo no git o mesmo deve ser testado/restaurado por outro grupo de alunos/dupla
-    https://github.com/trabAquarioInteligente/trab01/blob/master/transportePereciveis.backup
+    [Backup](https://github.com/trabAquarioInteligente/trab01/blob/master/transportePereciveis.backup)<br>
     c) informar aqui o grupo de alunos/dupla que realizou o teste.
     André Altivo
     Gabriela Piffer
