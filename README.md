@@ -510,6 +510,7 @@ inner join entrega ent on (ent.fk_automovel_id = au.id)<br>
 inner join funcionario fun on (fun.idfuncionario = au.fk_funcionario_idfuncionario);<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/megajoin.png" alt="Join com todas as verdade"><br>
 <br>
+[Consulta Completa](https://docs.google.com/spreadsheets/d/1ekNDyKrmX4MSIioy8lLzK3td3kyC-o12FQ4mashp7DE/edit?usp=sharing)<br>
 
         b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
 <br>
