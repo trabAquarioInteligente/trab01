@@ -76,14 +76,9 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
     [Smart Car]: [Harrison Sanches]
     [Pulseira Saúde]: [Wallace de Paula]
 #### 5.2 DECISÕES DE PROJETO
-    [atributo]: [descrição da decisão]
+
     
-    EXEMPLO:
-    a) Campo endereço: em nosso projeto optamos por um campo multivalorado e composto, pois a empresa 
-    pode possuir para cada departamento mais de uma localização... 
-    b) justifique!
-    
-#### Tabela _Pedido
+##### Tabela _Pedido
     1 - Campo dataentrega: em nosso projeto optamos por um campo date, pois o pedido tem uma data de entrega específica.
     
     2 - Campo numeroBandas: em nosso projeto optamos por um campo inteiro, pois indica o numero de bandas de porco que um cliente comprou, com isso conseguimos gerar alguns relatórios referentes a compras.
@@ -94,12 +89,12 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
    
     5 - Campo fk_funcionario_idfuncionario: em nosso projeto optamos por um campo inteiro, pois esse campo relaciona a tabela _Pedido com a tabela Funcionario e serve para indicar qual funcionario efetuou a venda.
     
-####  Tabela Adiciona
+##### Tabela Adiciona
     1 - Campo fk_funcionario_idfuncionario: em nosso projeto optamos por um campo inteiro, pois esse campo indica qual funcionario adicionou a banda de porco.
     
     2 - Campo fk_bandaporco_id: em nosso projeto optamos por um campo inteiro, pois esse campo indica qual lote foi adicionado por qual funcionario.
     
-#### Tabela Automovel
+##### Tabela Automovel
     1 - Campo placa: em nosso projeto optamos por um campo string, pois a placa envolve números e letras.
     
     2 - Campo isrefrigerado: em nosso projeto optamos por um campo boolean, pois precisamos saber se o automovel é refrigerado ou não.
@@ -114,49 +109,49 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
     
     7 - Campo fk_cidade_id: optamos por um campo inteiro, representa uma cidade, usamos essa chave estrangeira para saber qual cidade o automovel atende.
     
-#### Tabela Bairro
+##### Tabela Bairro
     1 - Campo nome: em nosso projeto  optamos por um campo String, pois nescessitamos guardar o nome do bairro. 
     
     2 - Campo id: em nosso projeto optamos por uma chave primária inteira, pois ela permite relacionar mais facilmente a tabela Bairro com outras tabelas.
     
     3 - Campo fk_cidade_id: em nosso projeto optamos pela chave estrangeira inteira, pois ela indica a qual cidade o bairro pertence.
     
-#### Tabela BandaPorco
+##### Tabela BandaPorco
     1 - Campo quantidade: em nosso projeto optamos por um campo inteiro afim de contar, somar e subtrair quantias deste campo. A empresa nescessita de certa forma controlar o estoque.
         
     2 - Campo dataAbate: em nosso projeto optamos por um campo date que serve como um tipo de loteamento, colocando as bandas de porco em grupos, por conta do modelo de vendas da empresa ser em first-in-first-out é importante que o campo deja date.
         
     3 - Campo id: em nosso projeto optamos por um campo serial, pois o id é gerado automaticamente e impede o usuário de digitar dois ids iguais, serve para interagir com outras tabelas, é a chave primária desta tabela.
     
-#### Tabela Cidade
+##### Tabela Cidade
     1 - Campo nome: em nosso projeto optamos por um campo String, pois prescimos saber o nome da cidade, pois cada cidade está vinculada à um automovel, e tambem uma cidae esta ligada a um endereço.
     
     2 - Campo id: em nosso projeto optamos por uma chave primária inteira, pois ela permite que relacionemos com maior facilidade a tabela Cidade com outras tabelas.
     
-#### Tabela Cliente
+##### Tabela Cliente
      1 - Campo nomeficticio: em nosso projeto optamos por um campo String, pois precisamos controlar os clientes e é nescessário saber o nome deles.
      
      2 - Campo cnpj: em nosso projeto optamos por um campo String, pois devemos controlar os clientes.
      
      3 - Campo id: em nosso projeto optamos por uma chave estrangeira inteira, pois precisamos relacioanr a tabela cliente com outras tabelas.
 
-#### Tabela Compoe
+##### Tabela Compoe
     1 - Campo fk_compoe1 -> bairro: gera uma composição utilizando o id de um bairro.
     
     2 - Campo fk_compoe2 -> endereco: gera uma composição utilizando o id de um endereço.
     
-#### Tabela Contato
+##### Tabela Contato
     1 - Campo id: em nosso projeto optamos por uma chave primário inteira para relacionarmos mais facilmente a tabela Contato com outras tabelas.
     
     2 - Campo telefone:  em nosso projeto optamos por um campo String, pois nescessitamos guardar os contatos dos funcionários.
     
     3 - Campo fk_funcionario_idfuncionario: em nosso projeto optamos por uma chave estrangeira, que indica a qual funcionário pertence qual contato.
     
-#### Tabela Da_baixa
+##### Tabela Da_baixa
     1 - Campo fk_bandaporco_id: em nosso projeto optamos por uma chave estrangeira inteira, indica qual 'lote' de bandas de porco foi dado baixa.
     2 - Campo fk__pedido_id: em nosso projeto optamos por uma chave estrangeira inteira, indica qual pedido vai se realcionar com qual lote, através disso que modificamos o numero de bandas da tabela BandaPorco.
     
-#### Tabela Endereco
+##### Tabela Endereco
     1 - Campo nome: em nosso projeto optamos por um campo String, pois precisamos saber o nome da empresa.
     
     2 - Campo id: em nosso projeto optamos por uma chave primária inteira para relacionar a Tebla Endereco com outras tabelas dispondo de uma maior facilidade.
@@ -169,12 +164,12 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
     
     6 - Campo fk_logradouro_id: em nosso projeto utilizamos essa chave estrangeira para indicar qual é o logradouro desse endereço.
 
-#### Tabela Entrega
+##### Tabela Entrega
     1 - Campo fk_automovel_id: em nosso projeto optamos por uma chave estrangeira para indicar qual automovel fará a entrega.
     
     2 - Campo fk_cliente_id: em nosso projeto optamos por essa chave estrangeira para indicar qual cliente vai receber a entrega.
     
-#### Tabela Funcionario
+##### Tabela Funcionario
     1 - Campo nome: em nosso projeto optamos por um campo String, pois há a nescessidade de guardar o nome do funcionário.
     
     2 - Campo cpf: em nosso projeto optamos por um campo String, pois há a nescessidade de controlar o funcionário.
@@ -185,19 +180,19 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
     
     5 - Campo senha: em nosso projeto optamos por um campo String, esse campo guarda a senha do usuário e serve para autorizar o acesso ao sistema.
     
-#### Tabela HorarioRecebimento
+##### Tabela HorarioRecebimento
     1 - Campo horarioinicio: em nosso projeto optamos por um campo time para indicar o horario que uma empresa começa a receber entregas.
     
     2 - Campo horariofim: em nosso projeto optamos por um campo time para indicar o horario que uma empresa para de receber.
     
     3 - Campo id: em nosso projeto optamos por esta chave estrangeira para relacionar uma faixa de horarios com outras tabelas.
     
-#### Tabela Lougradouro
+##### Tabela Lougradouro
     1 - Campo id: em nosso projeto optamos por esta chave primária para relacionar a tabela Logradouro com as demais Tabelas.
     
     2 - Campo descricao: em nosso projeto optamos por este campo pis é nescessário guardar os logradouros.
     
-#### Tabela Recebe
+##### Tabela Recebe
     1 - Campo fk_horariorecebimento_id: optamos por esta chave estrangeira para relacionar um horario de recebimento a um cliente.
     
     2 - Campo fk_cliente_id: em nosso projeto optamos por esta chave estrangeira para relacionar um cliente a um horario de recebimento.
