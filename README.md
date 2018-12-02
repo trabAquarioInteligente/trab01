@@ -552,7 +552,7 @@ order by f.nome;<br>
 Codigo: select cl.nomeficticio, pe.dataentrega, pe.numerobandas from _pedido pe <br>
 inner join cliente cl on (pe.fk_cliente_id = cl.id) <br>
 order by cl.nomeficticio;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Consultajoin/juncaopedidocliente.png" alt="Qual venda está relacionada a qual cliente"><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/select%20join/vendaRelacionada.png" alt="Qual venda está relacionada a qual cliente"><br>
 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
 
