@@ -82,7 +82,127 @@ Na parte do transporte o sistema deverá se integrar com o waze a fim de evitar 
     a) Campo endereço: em nosso projeto optamos por um campo multivalorado e composto, pois a empresa 
     pode possuir para cada departamento mais de uma localização... 
     b) justifique!
+    
+#### Tabela _Pedido
+    1 - Campo dataentrega: em nosso projeto optamos por um campo date, pois o pedido tem uma data de entrega específica.
+    
+    2 - Campo numeroBandas: em nosso projeto optamos por um campo inteiro, pois indica o numero de bandas de porco que um cliente comprou, com isso conseguimos gerar alguns relatórios referentes a compras.
+    
+    3 - Campo id: em nosso projeto optamos por um campo serial pois o id é gerado automaticamente evitando que o usuario coloque dois valores de id iguais em dois pedidos diferentes, id é chave primária e relaciona a tabela _Pedido com outras tabelas.
+        
+    4 - Campo fk_cliente_id: em nosso projeto optamos por um campo inteiro, pois esse campo relaciona a tabela _Pedido com a tabela cliente, serve pra informar qual cliente é dono do pedido.
+   
+    5 - Campo fk_funcionario_idfuncionario: em nosso projeto optamos por um campo inteiro, pois esse campo relaciona a tabela _Pedido com a tabela Funcionario e serve para indicar qual funcionario efetuou a venda.
+    
+####  Tabela Adiciona
+    1 - Campo fk_funcionario_idfuncionario: em nosso projeto optamos por um campo inteiro, pois esse campo indica qual funcionario adicionou a banda de porco.
+    
+    2 - Campo fk_bandaporco_id: em nosso projeto optamos por um campo inteiro, pois esse campo indica qual lote foi adicionado por qual funcionario.
+    
+#### Tabela Automovel
+    1 - Campo placa: em nosso projeto optamos por um campo string, pois a placa envolve números e letras.
+    
+    2 - Campo isrefrigerado: em nosso projeto optamos por um campo boolean, pois precisamos saber se o automovel é refrigerado ou não.
+    
+    3 - Campo carga_maxima: em nosso projeto optamos por um campo float, esse campo float indica a carga máxima que um automovel tem, ajuda no controle de peso do automovel.
+    
+    4 - Campo modelo: em nosso projeto optamos por um campo String, pois prescisamos guardar o modelo de cada automovel.
+    
+    5 - Campo id: em nosso projeto optamos por um campo inteiro, pois assim conseguimos relacionar a tabela Automovel com outras tabelas com maior facilidade, chave primária.
+    
+    6 - Campo fk_funcionario_idfuncionario: optamos por um campo inteiro, indica qual funcionário é responsável por qual automóvel.
+    
+    7 - Campo fk_cidade_id: optamos por um campo inteiro, representa uma cidade, usamos essa chave estrangeira para saber qual cidade o automovel atende.
+    
+#### Tabela Bairro
+    1 - Campo nome: em nosso projeto  optamos por um campo String, pois nescessitamos guardar o nome do bairro. 
+    
+    2 - Campo id: em nosso projeto optamos por uma chave primária inteira, pois ela permite relacionar mais facilmente a tabela Bairro com outras tabelas.
+    
+    3 - Campo fk_cidade_id: em nosso projeto optamos pela chave estrangeira inteira, pois ela indica a qual cidade o bairro pertence.
+    
+#### Tabela BandaPorco
+    1 - Campo quantidade: em nosso projeto optamos por um campo inteiro afim de contar, somar e subtrair quantias deste campo. A empresa nescessita de certa forma controlar o estoque.
+        
+    2 - Campo dataAbate: em nosso projeto optamos por um campo date que serve como um tipo de loteamento, colocando as bandas de porco em grupos, por conta do modelo de vendas da empresa ser em first-in-first-out é importante que o campo deja date.
+        
+    3 - Campo id: em nosso projeto optamos por um campo serial, pois o id é gerado automaticamente e impede o usuário de digitar dois ids iguais, serve para interagir com outras tabelas, é a chave primária desta tabela.
+    
+#### Tabela Cidade
+    1 - Campo nome: em nosso projeto optamos por um campo String, pois prescimos saber o nome da cidade, pois cada cidade está vinculada à um automovel, e tambem uma cidae esta ligada a um endereço.
+    
+    2 - Campo id: em nosso projeto optamos por uma chave primária inteira, pois ela permite que relacionemos com maior facilidade a tabela Cidade com outras tabelas.
+    
+#### Tabela Cliente
+     1 - Campo nomeficticio: em nosso projeto optamos por um campo String, pois precisamos controlar os clientes e é nescessário saber o nome deles.
+     
+     2 - Campo cnpj: em nosso projeto optamos por um campo String, pois devemos controlar os clientes.
+     
+     3 - Campo id: em nosso projeto optamos por uma chave estrangeira inteira, pois precisamos relacioanr a tabela cliente com outras tabelas.
 
+#### Tabela Compoe
+    1 - Campo fk_compoe1 -> bairro: gera uma composição utilizando o id de um bairro.
+    
+    2 - Campo fk_compoe2 -> endereco: gera uma composição utilizando o id de um endereço.
+    
+#### Tabela Contato
+    1 - Campo id: em nosso projeto optamos por uma chave primário inteira para relacionarmos mais facilmente a tabela Contato com outras tabelas.
+    
+    2 - Campo telefone:  em nosso projeto optamos por um campo String, pois nescessitamos guardar os contatos dos funcionários.
+    
+    3 - Campo fk_funcionario_idfuncionario: em nosso projeto optamos por uma chave estrangeira, que indica a qual funcionário pertence qual contato.
+    
+#### Tabela Da_baixa
+    1 - Campo fk_bandaporco_id: em nosso projeto optamos por uma chave estrangeira inteira, indica qual 'lote' de bandas de porco foi dado baixa.
+    2 - Campo fk__pedido_id: em nosso projeto optamos por uma chave estrangeira inteira, indica qual pedido vai se realcionar com qual lote, através disso que modificamos o numero de bandas da tabela BandaPorco.
+    
+#### Tabela Endereco
+    1 - Campo nome: em nosso projeto optamos por um campo String, pois precisamos saber o nome da empresa.
+    
+    2 - Campo id: em nosso projeto optamos por uma chave primária inteira para relacionar a Tebla Endereco com outras tabelas dispondo de uma maior facilidade.
+    
+    3 - Campo numero: em nosso projeto optamos por um campo inteiro que indica o numero do endereço.
+    
+    4 - Campo complemento: em nosso projeto optamos por um campo String, pode indicar um poto de referencia para o endereço.
+    
+    5 - Campo fk_cliente_id: em nosso projeto utilizamos essa chave estrangeira para relacionar o cliente indicado pela a mesma à um endereço.
+    
+    6 - Campo fk_logradouro_id: em nosso projeto utilizamos essa chave estrangeira para indicar qual é o logradouro desse endereço.
+
+#### Tabela Entrega
+    1 - Campo fk_automovel_id: em nosso projeto optamos por uma chave estrangeira para indicar qual automovel fará a entrega.
+    
+    2 - Campo fk_cliente_id: em nosso projeto optamos por essa chave estrangeira para indicar qual cliente vai receber a entrega.
+    
+#### Tabela Funcionario
+    1 - Campo nome: em nosso projeto optamos por um campo String, pois há a nescessidade de guardar o nome do funcionário.
+    
+    2 - Campo cpf: em nosso projeto optamos por um campo String, pois há a nescessidade de controlar o funcionário.
+    
+    3 - Campo cargahoraria: em nosso projeto  optamos por um campo time, para indicar quantas horas tal funcionário trabalha por dia.
+    
+    4 - Campo idfuncionario: em nosso projeto optamos por esta chave primária para indicar qual funcionário pertence esses dados, e relacionar esse funcionário com outras tabelas.
+    
+    5 - Campo senha: em nosso projeto optamos por um campo String, esse campo guarda a senha do usuário e serve para autorizar o acesso ao sistema.
+    
+#### Tabela HorarioRecebimento
+    1 - Campo horarioinicio: em nosso projeto optamos por um campo time para indicar o horario que uma empresa começa a receber entregas.
+    
+    2 - Campo horariofim: em nosso projeto optamos por um campo time para indicar o horario que uma empresa para de receber.
+    
+    3 - Campo id: em nosso projeto optamos por esta chave estrangeira para relacionar uma faixa de horarios com outras tabelas.
+    
+#### Tabela Lougradouro
+    1 - Campo id: em nosso projeto optamos por esta chave primária para relacionar a tabela Logradouro com as demais Tabelas.
+    
+    2 - Campo descricao: em nosso projeto optamos por este campo pis é nescessário guardar os logradouros.
+    
+#### Tabela Recebe
+    1 - Campo fk_horariorecebimento_id: optamos por esta chave estrangeira para relacionar um horario de recebimento a um cliente.
+    
+    2 - Campo fk_cliente_id: em nosso projeto optamos por esta chave estrangeira para relacionar um cliente a um horario de recebimento.
+    
+    
 >## Marco de Entrega 02 em: (13/09/2018)<br>
 #### 5.3 DESCRIÇÃO DOS DADOS 
     [objeto]: [descrição do objeto]
@@ -670,18 +790,6 @@ inner join adiciona ad on (ad.fk_funcionario_idfuncionario = fu.idfuncionario)<b
 inner join (select * from bandaporco where quantidade > 0) ba on (ba.id = ad.fk_bandaporco_id);<br>
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Views/SubBandaFuncionario.png" alt="Bandas de porco em estoque que cada funcionario adicionou"><br>
 
-<h2>bandas de porco que o funcionario com o ID 9 vendeu</h2>
-select ba.dataabate, pe.dataentrega, pe.numerobandas, fk_funcionario_idfuncionario as "ID do funcionario" from bandaporco ba <br>
-inner join da_baixa da on (da.fk_bandaporco_id = ba.id)<br>
-inner join (select * from _pedido where fk_funcionario_idfuncionario = 9) pe on (da.fk__pedido_id = pe.id);<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/subconsultas/subconsulta9.png" alt="bandas de porco que o funcionario com o ID 9 vendeu"><br>
-
-<h2>Clientes que recebem antes de 12:00</h2>
-select cl.nomeficticio, ho.horarioinicio, ho.horariofim from cliente cl<br>
-inner join recebe re on (re.fk_cliente_id = cl.id)<br>
-inner join (select * from horariorecebimento where horariofim <= '12:00:00') ho on (ho.id = re.fk_horariorecebimento_id);<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/subconsultas/clientesEntrega12.png" alt="Clientes que recebem antes de 12:00"><br>
-
 ### 10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES PARA APRESENTAÇAO FINAL (Mínimo 6 e Máximo 10)<br>
 
 ### 11 Backup completo do banco de dados postgres 
@@ -703,7 +811,7 @@ inner join (select * from horariorecebimento where horariofim <= '12:00:00') ho 
         c) executar códigos que tenham sido construídos para o trabalho 
         d) realizar qualquer procedimento executado pelo grupo que desenvolveu o trabalho
         
-<h2>Tutorial Restaurando Backup</h2>
+<h2>Tutorial Backup</h2>
 1 - Em um banco de dados sem nenhuma tabela clique com o botão direito.
 <img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/Tutorial/passo1.png" alt="passo1"><br>
 2 - Vá na opção Restore
