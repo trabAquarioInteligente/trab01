@@ -559,19 +559,19 @@ order by cl.nomeficticio;<br>
 <h2>Número de vendas que cada funcionário realizou</h2>
 Codigo: select f.nome as "nome do funcionario", count (f.nome) as "numero de vendas" from funcionario f<br>
 inner join _pedido pe on (f.idfuncionario = pe.fk_funcionario_idfuncionario) group by f.nome;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyvendas.png" alt="Número de vendas cada funcionario realizou"><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/select%20group%20by/funcionariovendas.png" alt="Número de vendas cada funcionario realizou"><br>
 
 <h2>Número telefones que cada funcionário tem</h2>
 Codigo: select f.nome, count(nome) from funcionario f <br>
 inner join contato co on (f.idfuncionario = fk_funcionario_idfuncionario) <br>
 group by nome order by nome;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbynumerodetelefones.png" alt="Quantos telefones cada funcionario tem"><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/select%20group%20by/numerotelefonefuncionario.png" alt="Quantos telefones cada funcionario tem"><br>
 
 <h2>Número de vezes que cada funcionário adicionou produto no estoque</h2>
 Codigo: select f.nome as "nome do funcionario", count (f.nome) as "quantas vezes o funcionario adicionou banda de porco no estoque" <br>
 from funcionario f<br>
 inner join adiciona pe on (f.idfuncionario = pe.fk_funcionario_idfuncionario) group by f.nome;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyadiciona.png" alt="Número de vezes que cada funcionário adicionou produto no estoque"><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/select%20group%20by/estoquefuncionario.png" alt="Número de vezes que cada funcionário adicionou produto no estoque"><br>
 
 <h2>Número de caminhões que são refrigerados e que não são refrigerados</h2>
 Codigo: select isrefrigerado, count(isrefrigerado) from automovel group by isrefrigerado;<br>
@@ -582,13 +582,13 @@ inner join adiciona pe on (f.idfuncionario = pe.fk_funcionario_idfuncionario) gr
 Codigo: select horarioinicio, horariofim, count(fk_horariorecebimento_id) from recebe re<br>
 inner join horariorecebimento ho on (re.fk_horariorecebimento_id = ho.id)<br>
 group by fk_horariorecebimento_id, horarioinicio, horariofim;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbynumerohorariocliente.png" alt="Número de clientes que cada horario de entrega é referente"><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/select%20group%20by/numClientesHorario.png" alt="Número de clientes que cada horario de entrega é referente"><br>
 
 <h2>Número de horarios de entregas que cada clientes possui</h2>
 Codigo: select cl.nomeficticio, count(cl.nomeficticio) from recebe re<br>
 inner join cliente cl on (re.fk_cliente_id = cl.id)<br>
 group by nomeficticio order by nomeficticio;<br>
-<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/groupbyconsultas/groupbyclientesentrega.png" alt="Número de horarios de entregas que cada clientes possui"><br>
+<img src="https://github.com/trabAquarioInteligente/trab01/blob/master/images/select%20group%20by/numHorarioEntragacliente.png" alt="Número de horarios de entregas que cada clientes possui"><br>
 
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
 <h2>Funcionarios e automoveis que estão relacionados</h2>
