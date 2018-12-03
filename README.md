@@ -787,7 +787,7 @@ inner join (select * from bandaporco where quantidade > 0) ba on (ba.id = ad.fk_
 
 ### 10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES PARA APRESENTAÇAO FINAL (Mínimo 6 e Máximo 10)<br>
 
-<br> <img src="https://prezi.com/p/ndgydbxc79fl/transporteperecivel/" <br>
+<br> https://prezi.com/p/ndgydbxc79fl/transporteperecivel/
 
 ### 11 Backup completo do banco de dados postgres 
     a) deve ser realizado no formato "backup" 
