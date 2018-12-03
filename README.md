@@ -829,9 +829,11 @@ inner join (select * from bandaporco where quantidade > 0) ba on (ba.id = ad.fk_
 É mais dificuldade financeira, pois não tenho uma estrutura para fazer o trabalho em casa, então acabei utilizando os computadores da faculdade para fazer o trabalho.<br>
 <h2>Daniel</h2>
  Tive mais dificuldade com relação à implementação dos modelos, principalmente o conceitual, o que acabou refletindo na prova, tirando isso, foi tudo ok.<br>
+ <h2>Nicolas</h2>
+ Tive dificuldade em relação à modelagem, existem várias soluções para um problema e quando falta experiência é difícil definir o caminho que vai ser tomado. Tanto que passamos por vários modelos conceituais e que resultaram em uma grande mudança no trabalho.<br>
 <h2>Rafael</h2>
  Minha dificuldade foi com inner join, porém com um pouco de estudo contornei essa dificuldade sem mais problemas, também tive dificuldade em entender como as tabelas se relacionam, porém ao longo da disciplina essa dúvida foi sanada.<br>
- 
+ <br>
 >## Marco de Entrega Final em: (08/11/2018)<br>
         
 ### 14  FORMATACAO NO GIT: https://help.github.com/articles/basic-writing-and-formatting-syntax/
